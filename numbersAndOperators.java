@@ -40,3 +40,22 @@ public class numbersAndOperators {
 
     }
 }
+
+
+/*
+
+Combining Operators to Make Assignments(This is a shortcut for eg: a = a + b; which is a += b;)
+
+eg: int a = 6,
+        b = 2;
+
+Purpose                 | Operator | Example  | Result
+------------------------------------------------------
+Add to and assign       | +=       | a += b   | a = 8
+Subtract from and assign| -=       | a -= b   | a = 4
+Multiply by and assign  | *=       | a *= b   | a = 12
+Divide by and assign    | /=       | a /= b   | a = 3
+Get remainder and assign| %=       | a %= b   | a = 0
+
+
+*/

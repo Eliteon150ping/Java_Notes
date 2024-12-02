@@ -15,6 +15,7 @@ public class variables {
         byte myByte = 127;                     // Holds a value from -2^7 to 2^7-1.(8 bits)(–128 to 127, or 256 possible values)
         short myShort = 1234;                  // Holds a value from -2^15 to 2^15-1.(16 bits)(–32,768 to 32,767, or 65,535 possible values)
         long myLong = 1234567890L;             // Holds a value from -2^63 to 2^63-1.(64 bits)(–9,223,372,036854,775,808 to 9,223,372,036854,775,807, or 18,446,744,073,709,551,616 possible values)
+        final double pie = 3.14;               // Constant(The value can never be changed at all).
 
         // Uninitialized variables(Won't print in here since local variables have to be initialized)(Instance variables (non-static fields) will have the default value)
         String uninitializedString;            // Defaults to 'null'
@@ -26,6 +27,8 @@ public class variables {
         byte uninitializedByte;                // Defaults to '0'
         short uninitializedShort;              // Defaults to '0'
         long uninitializedLong;                // Defaults to '0'
+
+        System.out.println("The variable" + myString); // Replace "myString" with other variable names to see the output.
 
     }
 
