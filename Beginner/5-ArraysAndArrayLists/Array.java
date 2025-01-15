@@ -53,5 +53,7 @@ public class Array {
 *      To print out values from an array, state the name along with its index position to print that specific
 *      value or to see all the values in the array, import the 'import java.util.Arrays;' and type 'System.out.println(Arrays.toString(arrayName))'
 *      to see all values otherwise you'll see the arrays memory location instead(something like this: [Ljava.lang.String;@65ab7765)
-       or just use an 'Enhanced for loop' */
+       or just use an 'Enhanced for loop'
+
+*/
 

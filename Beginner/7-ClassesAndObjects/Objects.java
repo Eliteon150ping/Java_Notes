@@ -2,7 +2,7 @@ package ClassesAndObjects;
 
 public class Objects {
 
-    // Hardcoded values(Though writing a constructor will make put values easier, more on that later)
+    // Hardcoded values(Though writing a constructor will make putting values easier, more on that later)
     String name = "Junior Duke";
     int custID = 1205;
     String address = "11 somewhere street";                                                  // Fields(Properties)(Attributes)

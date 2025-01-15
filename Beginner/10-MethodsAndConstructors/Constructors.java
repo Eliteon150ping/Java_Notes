@@ -28,6 +28,25 @@ public class Constructors {
         this.Param = Param        /* The left side with "this.Param" is using the declared variable in line 24 while the right side "Param" is using the arg value passed into the parameter*/                                                                                                                                                                                                      ;
         this.ParamNum = ParamNum; // "This" keyword is a reference to the current object.
     }
+
+
+    // Constructor chaining
+    /*
+
+    public Constructors() {
+        this("Default Parameter", 0); // Calls the parameterized constructor     The "this()" is used to call the Parameterized constructor below in this one.
+        System.out.println("No-argument constructor called");
+    }
+
+    public Constructors(String Param, int ParamNum) {
+        this.Param = Param;
+        this.ParamNum = ParamNum;
+        System.out.println("Parameterized constructor called");
+    }
+
+    */
+
+
 }
 
 
@@ -62,6 +81,6 @@ Types of Constructors:
   the instance of the class that is executing a method or constructor.
   It's like a pointer to the object itself, allowing you to access its members (variables, methods) from within the class.
 
-• "This" can also be used to call one constructor from another within the same class (constructor chaining).
+• "This()" can also be used to call one constructor from another within the same class (constructor chaining),usually defined in a constructor to call the other constructor.
 
 */
