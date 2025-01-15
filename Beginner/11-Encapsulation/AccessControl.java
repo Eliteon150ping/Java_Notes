@@ -14,8 +14,8 @@ public class AccessControl {
     private int year;
 
     AccessControl(String make,String model,int year){
-        this.setMake(make);
-        this.setModel(model);
+        this.setMake(make);                                 // The setter methods are used here to make updating/recieving arguments alot easier instead of using 'this.make = make;'
+        this.setModel(model);                               // since the setter method has the 'this.make = make;' in it
         this.setYear(year);
     }
 
