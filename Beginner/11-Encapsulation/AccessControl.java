@@ -98,6 +98,27 @@ Why Use Them?
 | Parameters     | None.                            | Typically accepts one parameter.|
 | Use Case       | When you need to view data.      | When you need to update data.   |
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Access level modifiers determine whether other classes can
+use a particular field or invoke a particular method
+
+• At the top level—public, or package-private (no explicit
+modifier).
+
+• At the member level—public, private, protected, or
+package-private (no explicit modifier).
+
++-------------+---------+---------+---------+-------+
+| Modifier    | Class   | Package | Subclass| World |                Stronger access privileges going downwards
++-------------+---------+---------+---------+-------+                            |
+| public      | Y       | Y       | Y       | Y     |                            |
+| protected   | Y       | Y       | Y       | N     |                            |
+| No modifier | Y       | Y       | N       | N     |                            v
+| private     | Y       | N       | N       | N     |
++-------------+---------+---------+---------+-------+
+
+
 
 
 
