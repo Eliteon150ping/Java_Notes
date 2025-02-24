@@ -2,6 +2,7 @@ package Beginner;
 
 import Beginner.Car;
 import Beginner.Bicycle;
+import Beginner.Boat;
 
 
 public class Inheritance {
@@ -24,6 +25,7 @@ public class Inheritance {
 
         System.out.println(car.doors);   // Print the attributes from the 'car' class  // NB: The 'bicycle()' method from the 'bike' class will NOT work for the 'car' class
         System.out.println(bike.pedals); // Print the attributes from the 'bike' class  // NB: The 'doors()' method from the 'car' class will NOT work for the 'bike' class
+
 
     }
 }

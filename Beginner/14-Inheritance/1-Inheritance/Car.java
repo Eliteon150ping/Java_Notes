@@ -16,4 +16,8 @@ public class Car extends Vehicle{    // Use 'extends' keyword to show that the c
         System.out.println("This car is a sedan and it has 4 wheels");
     }
 
+    @Override                                              // Used for method overriding
+    public void go() {
+        System.out.println("*The car begins moving*");
+    }
 }

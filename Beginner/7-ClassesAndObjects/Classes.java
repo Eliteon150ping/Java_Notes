@@ -14,6 +14,16 @@ public class Classes {
 
         object1.displayCustomer();
 
+        class2 class2 = new class2();
+        class2.print();
+
+    }
+}
+
+// You can have multiple classes in one file as long as ONLY ONE class has 'Public'
+class class2{
+    void print(){
+        System.out.println("This is class 2");
     }
 }
 

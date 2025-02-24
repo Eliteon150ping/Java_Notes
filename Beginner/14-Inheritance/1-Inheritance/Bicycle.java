@@ -15,4 +15,9 @@ public class Bicycle extends Vehicle{  // Use 'extends' keyword to show that the
     public void bicycle() {
         System.out.println("Bicycle has " + wheels + " wheels and " + pedals + " pedals");
     }
+
+
+    public void go() {
+        System.out.println("*The bicycle begins moving*");
+    }
 }
