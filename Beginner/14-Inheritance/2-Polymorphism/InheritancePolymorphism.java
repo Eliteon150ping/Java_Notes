@@ -10,7 +10,9 @@ public class InheritancePolymorphism {
 
     public static void main(String[] args) {
 
-        // Polymorphism = 	The ability of an object to identify as more than one type (greek word for poly-"many", morph-"form")
+        // Polymorphism = 	The ability of an object to identify as more than one type/more than itself (greek word for poly-"many", morph-"form")
+        //                  Eg. Think a dog. It identifies as a dog(itself), also as a animal and as an organism thus taking 3 forms.
+
 
         CarPolymorphism car = new CarPolymorphism(); // Create a car object
         BicyclePolymorphism bicycle = new BicyclePolymorphism(); // Create a bicycle object
@@ -36,3 +38,11 @@ public class InheritancePolymorphism {
                                                                       // of any of the subclasses hence false is returned)
     }
 }
+
+/*
+
+NB: This can also work through interfaces(More on that later), just create "VehiclePolymorphism" file an interface file and declare an basic method
+
+
+
+*/

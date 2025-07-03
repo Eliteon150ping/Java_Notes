@@ -26,7 +26,7 @@ public class Constructors {
     int ParamNum;
 
     public Constructors(String Param, int ParamNum) {  // The params will act as tempo variables that will take any value(In this case a string and integer)
-        this.Param = Param        /* The left side with "this.Param" is using the declared variable in line 24 while the right side "Param" is using the arg value passed into the parameter*/                                                                                                                                                                                                      ;
+        this.Param = Param        /* The left side with "this.Param" is using the declared variable in line 25 while the right side "Param" is using the arg value passed into the parameter*/                                                                                                                                                                                                      ;
         this.ParamNum = ParamNum; // "This" keyword is a reference to the current object.
     }
 

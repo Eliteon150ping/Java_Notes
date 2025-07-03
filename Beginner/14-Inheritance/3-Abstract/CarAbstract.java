@@ -9,4 +9,10 @@ public class CarAbstract extends VehicleAbstract{
         System.out.println("You're driving the car");
 
     }
+
+    @Override
+    void stop(){
+        System.out.println("You're stopping");
+
+    }
 }

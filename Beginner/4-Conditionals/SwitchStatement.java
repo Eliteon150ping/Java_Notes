@@ -4,7 +4,7 @@ public class SwitchStatement {
 
     public static void main(String[] args) {
 
-        int month = 1;
+        int month = 2;
         boolean isLeapYear = true;
 
         // A Switch Statement is a simplier more performance way of doing an if else statement if there's way too much conditions to be checked like a highway with multiple exits

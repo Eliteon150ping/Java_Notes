@@ -14,7 +14,10 @@ public abstract class VehicleAbstract {
 
 NB:
 Abstract classes can have constructors, including parameterized constructors.
-Abstract methods can have parameters, and subclasses must implement them.
+Abstract methods can have parameters, and subclasses MUST implement them.
 You cannot instantiate an abstract class directly, but subclasses can call the constructor using super().
+
+If an abstract class contains abstract methods, any concrete subclass (a non-abstract class) must override and provide implementations for ALL the abstract methods.
+However, if a subclass is also declared abstract, it is not required to implement the abstract methods from the parent class.
 
 */

@@ -35,6 +35,7 @@ public class Array {
         }                                        // }
 
         // A 'break' can be used in an Enhanced for loop to find a specific value by looping then ends which needs a boolean expression to work best
+        // What happens here is it checks if atleast one person is old enough then it'll print "true"
         boolean isAdult = false;
         for (int age : ages ) {
              if(age >= 18){
