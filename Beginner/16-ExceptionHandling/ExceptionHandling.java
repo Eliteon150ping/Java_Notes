@@ -30,7 +30,7 @@ public class ExceptionHandling {
             finally {                                          // This is optional but it's good for displaying a message
                 System.out.println("This always executes");    // regardless of an error or not eg. If a calculation was
             }                                                  // successful or not, a message like, "Operation completed"
-        }                                                      // will show for conculsion
+        }                                                      // will show for conclusion
 
 }
 
@@ -38,7 +38,7 @@ public class ExceptionHandling {
 
 Runtime vs. compile errors:
 
-1) Compile errors happen when the syntax in your code are not defined correctly, mispelled or or incomplete(The program will
+1) Compile errors happen when the syntax in your code are not defined correctly, misspelled or incomplete(The program will
    never fully execute/run.)
 
 2) Runtime errors happen when the program is running but an unexpected error or logical issue occurs
