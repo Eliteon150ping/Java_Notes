@@ -1,52 +1,65 @@
 package PromotingAndCastingVariables;
 
+import java.lang.reflect.Type;
+
 public class PromotingAndCastingVariables {
-    // change values to different primitive value types
+    // Change values to different primitive value types
 
     public static void main(String[] args) {
 
+        // Widening Promotion(Converting to a bigger type)
+        int intToLong = 6;
+        long longValue = intToLong;
+        System.out.println(longValue);  // Becomes '6L'
+
+        // Narrowing Type Casting(Converting to a smaller type)
         // Converting a double to an int
-        int DoubleToInt = (int)20.69;
-        System.out.println(DoubleToInt); // 20.69 will become a integer of 20
+        int doubleToInt = (int)20.69;
+        System.out.println(doubleToInt); // 20.69 will become a integer of 20
 
-        // Promotion(Converting to a bigger type)
-        long intToLong = 6;
+        double d = 9.78;
+        int i = (int) d; // loses decimal
 
-        // Type Casting(Converting to a smaller type)
-        int longToInt = (int)20L;
-
-
-
-        // Be careful when converting:
-        // This could cause issues...
-        int myInt;
-        long myLong = 123987654321L;
-        myInt = (int) (myLong); // Number is chopped.
-                                // myInt is -566397263
+        // Be careful when converting as this could cause issues...
+        // Narrowing with possible overflow
+        long largeLong = 123987654321L;
+        int longToInt = (int) largeLong; // overflow - unpredictable value
+        System.out.println(longToInt); // -566397263
 
         // A safe way to convert
         int myInt2;
         long myLong2 = 99L;
-        myInt2 = (int) (myLong2); // No data loss, only zeroes.
-                                  // myInt is 99
+        myInt2 = (int) (myLong2); // No data loss because 99 fits within int’s range, myInt is 99
+
+        // Narrowing safely (no data loss)
+        long smallLong = 99L;
+        int safeInt = (int) smallLong; // no change since within int range
+        System.out.println(safeInt); // 99
+
+        // Promotion in expressions
+        int x = 5;
+        double y = x; // promotion int → double
+        System.out.println(y); // 5.0
 
     }
 }
 
 /*
 
-Promotion:
+Promotion(Widening):
 
 • Automatic promotions:
-– If you assign a smaller type to a larger type:
-  From byte -> short -> int -> long
+– When you assign a smaller type to a larger type:
+  From byte -> short -> int -> long -> float → double
+- char also promotes to int
 
-
-Type Casting:
+Type Casting(Narrowing):
 
 • When to cast:
 – If you assign a larger type to a smaller type:
-  From long -> int -> short -> byte
+  From double → float -> long -> int -> short -> byte
+- Risk: overflow or precision loss
+
 
 NB: Be careful when converting as values can be lost in the conversion.
 

@@ -17,6 +17,9 @@ To run in cmd:
 2) javac HelloWorld.java (Called compiling).      // Compiles to HelloWorld.class
 3) Again type java HelloWorld.java to see the output.  // Runs the compiled bytecode using JVM
 
+What is Java?
+Java is a general-purpose, object-oriented programming language designed to be platform-independent.
+
 1) What is Compiling?
 Compiling Java code is essential because the machine(Your PC) cannot understand a human-readable language like Java.
 By translating human-readable code into machine-readable language, the Java compiler ensures that the code runs and produces
