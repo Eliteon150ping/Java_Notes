@@ -30,6 +30,16 @@ public class Variables {
         short uninitializedShort;              // Defaults to '0'
         long uninitializedLong;                // Defaults to '0'
 
+        // Primitive Literals
+        int binary = 0b1010;   // binary 10
+        int hex = 0x1F;        // hexadecimal 31
+        int octal = 017;       // octal 15
+        double sci = 1.23e2;   // scientific notation 123.0
+
+        // Underscores in numeric literals
+        int million = 1_000_000; // easier to read
+
+
         System.out.println("The variable is: " + myString); // Replace "myString" with other variable names to see the output.
 
     }
@@ -44,7 +54,9 @@ It means the method/variable:
 • Belongs to the class and is shared by all objects of that class
 • Is not unique to an object instance
 • Can be accessed without instantiating the class
-• A static variable is shared by all objects in a class.
-• An instance variable is unique to an individual object.
+
+Static vs Instance Variables
+• A Static variable is shared by all objects in a class.
+• An Instance variable is unique to an individual object.
 
 */

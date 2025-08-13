@@ -11,7 +11,6 @@ public class stringClass {
         String herName = new String("Anne Smith");
         System.out.println(hisName + "\n" + herName);
 
-
         // Concatenating Strings(Joining Strings together)
         String myString = "Hello";
         myString = myString.concat(" World"); // Using the .concat method
@@ -31,6 +30,13 @@ public class stringClass {
             System.out.println("bad");
         }
 
+        //More Comparison
+        String a = "Test";
+        String b = "Test";
+        System.out.println(a == b); // compares references
+        System.out.println(a.equals(b)); // compares values
+        System.out.println(a.equalsIgnoreCase("test")); // ignores case
+
         // String Method Calls with Object Return Values Method calls returning objects:
         String greet = " HOW ".trim();                                                     // ".trim()" will remove any blank spaces ONLY before and after a word/sentence, not in between.
         String lc = greet + "DY".toLowerCase();                                            // ".toLowerCase()" will convert any upper case letters to lower case. The "toUpperCase()" will do the opposite.
@@ -46,8 +52,27 @@ public class stringClass {
         int idx2 = phoneNum.indexOf('-', idx1+1);                            // If you put any number after 1 in the 2nd argument of "idx1+1", you'll still get 7.
         System.out.println("second dash idx: "+idx2);
 
+        // Substring
+        String combined = "Hello" + "World";
+        String sub = combined.substring(0, 5); // "Hello"
+        System.out.println(sub);
 
+        // Character access
+        char letter = combined.charAt(1); // 'e'
+        System.out.println(letter);
 
+        // Replace
+        String replaced = combined.replace("World", "Java");
+        System.out.println(replaced); // "World" gets replaced by "Java"
+
+        // Escape sequences
+        String escaped = "She said \"Hello\"\nNew line\tTabbed";
+        System.out.println(escaped);
+
+        // Mixing Strings and Other Types
+        String mix = "Number: " + 5; // "Number: 5"
+        String calc = "Sum: " + (2 + 3); // "Sum: 5"
+        System.out.println(mix + " " + calc);
 
     }
 }

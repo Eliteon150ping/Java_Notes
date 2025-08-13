@@ -41,6 +41,24 @@ public class PromotingAndCastingVariables {
         double y = x; // promotion int → double
         System.out.println(y); // 5.0
 
+        // Char Casting and Unicode
+        char c1 = 65;          // 'A'
+        char c2 = '\u0041';    // Unicode for 'A'(Search online for the complete table)
+        int numFromChar = c1;  // 65 (ASCII/Unicode value)
+        System.out.println(numFromChar);
+
+        // Mixed-Type Arithmetic Promotion
+        int numVal = 5;
+        double doubleVal = 6.2;
+        double result = numVal + doubleVal; // int promoted to double
+        System.out.println(result);
+
+        byte b1 = 1;
+        byte b2 = 2;
+        int sum = b1 + b2; // result is int, must cast back to byte if needed
+        byte sumBackToByte = (byte) sum;
+        System.out.println(sumBackToByte);
+
     }
 }
 
