@@ -36,6 +36,27 @@ public class SwitchStatement {
 
         }
 
+        // ===== String Switch Example =====
+        String day = "MONDAY";
+        switch (day.toLowerCase()) {
+
+            case "monday":
+                System.out.println("Start of the week!");
+                break;
+
+            case "friday":
+                System.out.println("Almost weekend!");
+                break;
+
+            case "saturday":
+            case "sunday":
+                System.out.println("Weekend!");
+                break;
+
+            default:
+                System.out.println("Midweek day.");
+        }
+
 
     }
 }

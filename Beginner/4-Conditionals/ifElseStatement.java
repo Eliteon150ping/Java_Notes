@@ -50,6 +50,7 @@ public class ifElseStatement {
         String result = (age2 >= 18) ? "Adult" : "Child";   // Must declare data return type example. Boolean, int, String etc. The "?" tells true and ":" tells false
         System.out.println(result);
 
+
     }
 }
 
@@ -59,7 +60,7 @@ public class ifElseStatement {
  | Is less than                |  <   |   int i=0; (i < 1)   |
  | Is less than or equal to    |  <=  |   int i=1; (i <= 1)  |
  | Is greater than             |  >   |   int i=2; (i > 1)   |
- | Is greater than or equal to |  >=  |  int i=1; (i >= 1)   |  */
+ | Is greater than or equal to |  >=  |   int i=1; (i >= 1)  |  */
 
 // Boolean Expressions will check if one is true or not(can chain multiple checks to execute)
 // Best used for comparison.
