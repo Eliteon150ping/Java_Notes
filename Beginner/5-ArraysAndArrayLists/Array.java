@@ -46,6 +46,13 @@ public class Array {
         }
         System.out.println("Old enough? " + isAdult);
 
+        // ---------- 1D Array Sorting ----------
+        int[] arraySorting = {5, 3, 8, 1, 2};
+        System.out.println("Original array: " + Arrays.toString(arraySorting));
+
+        Arrays.sort(arraySorting); // Sort array in ascending order
+        System.out.println("Sorted array: " + Arrays.toString(arraySorting));
+
     }
 }
 

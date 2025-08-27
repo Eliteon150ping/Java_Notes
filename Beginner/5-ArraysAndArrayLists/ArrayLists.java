@@ -38,6 +38,25 @@ public class ArrayLists {
 
         // Checking the size of the ArrayList                              // '.size()' will display the length of the arrayList(How many numbers are in the arrayList in total)
         System.out.println("Total numbers: " +numbers.size());
+
+        // ---------- ArrayList contains() and indexOf() ----------
+        ArrayList<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+
+        System.out.println("\nFruits list: " + fruits);
+
+        // Check if an element exists
+        System.out.println("Contains Banana? " + fruits.contains("Banana")); // true
+
+        // Find index of an element
+        int orangeIndex = fruits.indexOf("Orange");
+        System.out.println("Index of Orange: " + orangeIndex);
+
+        // Removing by element
+        fruits.remove("Apple");
+        System.out.println("After removing Apple: " + fruits);
     }
 }
 

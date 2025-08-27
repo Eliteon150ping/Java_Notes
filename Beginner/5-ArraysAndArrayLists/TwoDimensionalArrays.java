@@ -19,6 +19,21 @@ public class TwoDimensionalArrays {
 
         System.out.println(yearlySales[0][2]);
 
+        // ---------- 2D Array Nested Loop ----------
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        System.out.println("\n2D Array values:");
+        for (int row = 0; row < matrix.length; row++) {          // Outer loop for rows
+            for (int col = 0; col < matrix[row].length; col++) { // Inner loop for columns
+                System.out.print(matrix[row][col] + " ");
+            }
+            System.out.println();
+        }
+
 
     }
 }
