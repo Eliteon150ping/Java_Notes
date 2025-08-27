@@ -34,6 +34,21 @@ public class TwoDimensionalArrays {
             System.out.println();
         }
 
+        // A jagged array is an array of arrays where rows have different lengths
+        int[][] jagged = {
+                {1, 2, 3},    // Row 0 has 3 elements
+                {4, 5},       // Row 1 has 2 elements
+                {6, 7, 8, 9}  // Row 2 has 4 elements
+        };
+
+        System.out.println("Jagged Array:");
+        for (int row = 0; row < jagged.length; row++) {
+            for (int col = 0; col < jagged[row].length; col++) {
+                System.out.print(jagged[row][col] + " ");
+            }
+            System.out.println();
+        }
+
 
     }
 }

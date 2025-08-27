@@ -53,6 +53,21 @@ public class Array {
         Arrays.sort(arraySorting); // Sort array in ascending order
         System.out.println("Sorted array: " + Arrays.toString(arraySorting));
 
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
+
+        // Check equality
+        System.out.println("Arrays equal? " + Arrays.equals(arr1, arr2)); // true
+
+        // Fill array with a value
+        int[] filled = new int[5];
+        Arrays.fill(filled, 7); // Fill all positions with 7
+        System.out.println("Filled array: " + Arrays.toString(filled));
+
+        // Copy array
+        int[] copy = Arrays.copyOf(arr1, 5); // Copy arr1, make length 5
+        System.out.println("Copied array: " + Arrays.toString(copy));
+
     }
 }
 
