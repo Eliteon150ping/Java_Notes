@@ -18,6 +18,7 @@ public class Methods {
         float totalThree = Methods.sum2(2, 12.85F);              // For int and float
         System.out.println(totalThree);
 
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////
@@ -125,6 +126,16 @@ method overloading:
 
 • May have different functionality or similar functionality
 • Are widely used in the foundation classes
+
+
+//Method Signature Definition
+The method signature is the name of the method + the parameter types in order.
+It does not include the return type or access modifier.
+
+public static void sayHello("")      // Signature: sayHello()
+public static int getNumber()      // Signature: getNumber()
+public static int sum(int, int)    // Signature: sum(int, int)
+public static float sum(float, float) // Signature: sum(float, float)
 
 
 */
