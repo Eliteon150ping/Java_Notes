@@ -10,7 +10,6 @@ public class Constructors {
 
         System.out.println(AllArgsConstructor.Param + "and its number is " + AllArgsConstructor.ParamNum);
 
-
     }
 
     // 1) Default Constructor:
@@ -28,13 +27,11 @@ public class Constructors {
     public Constructors(String Param, int ParamNum) {  // The params will act as tempo variables that will take any value(In this case a string and integer)
         this.Param = Param        /* The left side with "this.Param" is using the declared variable in line 25 while the right side "Param" is using the arg value passed into the parameter*/                                                                                                                                                                                                      ;
         this.ParamNum = ParamNum; // "This" keyword is a reference to the current object.
+
     }
 
-
     // Constructor chaining
-    /*
-
-    public Constructors() {
+   /* public Constructors() {
         this("Default Parameter", 0); // Calls the parameterized constructor     The "this()" is used to call the Parameterized constructor below in this one.
         System.out.println("No-argument constructor called");
     }
@@ -44,13 +41,45 @@ public class Constructors {
         this.ParamNum = ParamNum;
         System.out.println("Parameterized constructor called");
     }
-
     */
+}
+class SameConstructor{
 
+    public static void main(String[] args) {
+
+        SameConstructor obj = new SameConstructor();
+        SameConstructor obj2 = new SameConstructor("Hello",1);
+        SameConstructor obj3 = new SameConstructor("Java",2);
+
+        obj.display();
+        obj2.display();
+        obj3.display();
+    }
+
+    // Using the Same Constractor for different purposes
+    String message;
+    int number;
+
+    // No-Argument constructor
+    public SameConstructor(){
+        message = "Default message";
+        number = 0;
+        System.out.println("No-argument constructor called");
+    }
+
+    // Parameterized constructor
+    public SameConstructor(String message,int number){
+        this.message = message;
+        this.number = number;
+        System.out.println("Parameterized constructor called");
+    }
+
+    // Display method used for the constructors
+    public void display(){
+        System.out.println("Message: " + message + " Number: " + number);
+    }
 
 }
-
-
 /*
 
 NB:
