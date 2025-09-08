@@ -46,17 +46,3 @@ public class Variables {
 
 }
 
-/*
-
-When a "static" keyword modifier is applied to a method or variable.
-It means the method/variable:
-
-• Belongs to the class and is shared by all objects of that class
-• Is not unique to an object instance
-• Can be accessed without instantiating the class
-
-Static vs Instance Variables
-• A Static variable is shared by all objects in a class.
-• An Instance variable is unique to an individual object.
-
-*/

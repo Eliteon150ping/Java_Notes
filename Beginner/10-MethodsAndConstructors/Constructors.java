@@ -80,6 +80,41 @@ class SameConstructor{
     }
 
 }
+
+class StaticVsInstance {
+
+    // Static variable (shared by all objects of the class)
+    static int objectCount = 0;
+
+    // Instance variable (unique for each object)
+    String name;
+
+    // Constructor
+    public StaticVsInstance(String name) {
+        this.name = name;
+        objectCount++; // increments shared static variable
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + " | Object Count: " + objectCount);
+    }
+
+    public static void main(String[] args) {
+        StaticVsInstance obj1 = new StaticVsInstance("First");
+        StaticVsInstance obj2 = new StaticVsInstance("Second");
+        StaticVsInstance obj3 = new StaticVsInstance("Third");
+
+        obj1.display();
+        obj2.display();
+        obj3.display();
+
+        // Notice objectCount is shared by all instances
+        System.out.println("Total objects created: " + StaticVsInstance.objectCount);
+    }
+
+
+}
+
 /*
 
 NB:
@@ -112,5 +147,17 @@ Types of Constructors:
   It's like a pointer to the object itself, allowing you to access its members (variables, methods) from within the class.
 
 • "This()" can also be used to call one constructor from another within the same class (constructor chaining),usually defined in a constructor to call the other constructor.
+
+
+When a "static" keyword modifier is applied to a method or variable.
+It means the method/variable:
+
+• Belongs to the class and is shared by all objects of that class
+• Is not unique to an object instance
+• Can be accessed without instantiating the class
+
+Static vs Instance Variables
+• A Static variable is shared by all objects in a class.
+• An Instance variable is unique to an individual object.
 
 */
