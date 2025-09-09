@@ -5,6 +5,10 @@ public class Vehicle {
 
     double speed;
 
+    // Constructor
+    public Vehicle(){
+        System.out.println("Vehicle Constructor called");
+    }
 
     void go(){
         System.out.println("This vehicle is moving");
@@ -13,8 +17,6 @@ public class Vehicle {
         System.out.println("This vehicle is stopped");
     }
 }
-
-
 /*
 
 Benefits:

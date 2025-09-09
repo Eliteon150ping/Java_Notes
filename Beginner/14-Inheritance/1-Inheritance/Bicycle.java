@@ -12,6 +12,11 @@ public class Bicycle extends Vehicle{  // Use 'extends' keyword to show that the
     int pedals = 2;                     // Since a bicycle has 2 wheels and no doors, these will remain unique to just the 'bicycle' class since cars have 4
                                         // wheels and doors
 
+    public Bicycle(){
+        super(); // Calls Vehicle constructor
+        System.out.println("Bicycle Constructor called");
+    }
+
     public void bicycle() {
         System.out.println("Bicycle has " + wheels + " wheels and " + pedals + " pedals");
     }
