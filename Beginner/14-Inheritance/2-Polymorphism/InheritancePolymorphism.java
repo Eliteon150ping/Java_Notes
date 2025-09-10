@@ -1,8 +1,9 @@
 package Beginner;
 
-import Beginner.CarPolymorphism;
+import Beginner.*;
 import Beginner.BicyclePolymorphism;
 import Beginner.Boat;
+import Beginner.CarPolymorphism;
 import Beginner.VehiclePolymorphism;
 
 
@@ -36,13 +37,34 @@ public class InheritancePolymorphism {
         System.out.println(boat instanceof VehiclePolymorphism);      // True
         System.out.println(Vehicle instanceof BicyclePolymorphism);   // False(This happens because the 'Vehicle' object of the Superclass 'VehiclePolymorphism' is NOT an instance
                                                                       // of any of the subclasses hence false is returned)
+
+        // Upcasting and downcasting
+
+        // Upcasting (Car -> Vehicle)
+        VehiclePolymorphism v1 = new CarPolymorphism();
+        v1.go(); // Calls CarPolymorphism's go() at runtime
+
+        // Downcasting (Vehicle -> Car)
+        if(v1 instanceof CarPolymorphism) {
+            CarPolymorphism c1 = (CarPolymorphism) v1;
+            c1.go();
+
+        }
+
+        // Unsafe downcasting
+        VehiclePolymorphism v2 = new VehiclePolymorphism();
+        if(v2 instanceof CarPolymorphism) {
+            CarPolymorphism c2 = (CarPolymorphism) v2; // Won't run because check fails
+            c2.go();
+
+        }else{
+            System.out.println("v2 is not a Car, downcast not allowed");
+        }
     }
 }
 
 /*
 
 NB: This can also work through interfaces(More on that later), just create "VehiclePolymorphism" file an interface file and declare an basic method
-
-
 
 */
