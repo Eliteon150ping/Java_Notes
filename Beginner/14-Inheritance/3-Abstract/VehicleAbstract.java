@@ -3,10 +3,22 @@ package Beginner;
 //  This class cannot be instantiated anywhere since it's now an abstract class but its children/subclass can use these methods and override them.
 public abstract class VehicleAbstract {
 
-    // The parent/superclass has methods that are empty but can be overriden and used in other subclasses
+    String brand;
 
+    // Constructor
+    public VehicleAbstract(String brand){
+        this.brand = brand;
+        System.out.println("Vechicle Abstract constructor called for: " + brand);
+    }
+
+    // The parent/superclass has methods that are empty but can be overriden and used in other subclasses
     abstract void go();                 // Bodies '{}' are not defined here for these methods
     abstract void stop();
+
+    // Concrete method(subclasses inherit it as-is)
+    public void describe(){
+        System.out.println("This is a vehicle of brand: " + brand);
+    }
     
 }
 

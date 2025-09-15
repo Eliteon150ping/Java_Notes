@@ -4,9 +4,17 @@ import Beginner.VehicleAbstract;
 
 public class CarAbstract extends VehicleAbstract{
 
+    int doors;
+
+    // Constructor in subclass calling super()
+    public CarAbstract(String brand, int doors){
+        super(brand); // Calls the VehicleAbstract constructor
+        this.doors = doors;
+    }
+
     @Override    // The 'go()' method is inherited here and overrided to do something here
     void go() {
-        System.out.println("You're driving the car");
+        System.out.println("You're driving the car with " + doors + " doors. ");
 
     }
 
