@@ -34,7 +34,96 @@ public class ExceptionHandling {
 
 }
 
+// Throwing your own exception
+class ThrowExample {
+    public static void checkAge(int age) {
+        if (age < 18) {
+            throw new IllegalArgumentException("Age must be at least 18"); // create & throw
+        }
+        System.out.println("Access granted – you’re old enough!");
+    }
+
+    public static void main(String[] args) {
+        checkAge(15); // will throw IllegalArgumentException
+    }
+}
+
+// Custom exception (checked)
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+class CustomExceptionExample {
+    public static void checkAge(int age) throws InvalidAgeException {
+        if (age < 18) {
+            throw new InvalidAgeException("Custom: Age must be at least 18");
+        }
+        System.out.println("Access granted");
+    }
+
+    public static void main(String[] args) {
+        try {
+            checkAge(15);
+        } catch (InvalidAgeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+// Custom unchecked exception
+class TooLowBalanceException extends RuntimeException {
+    public TooLowBalanceException(String message) {
+        super(message);
+    }
+}
+class BankAccount {
+    private double balance;
+
+    public BankAccount(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public void withdraw(double amount) {
+        if (amount > balance) {
+            // Throw unchecked exception
+            throw new TooLowBalanceException("Withdrawal of " + amount +
+                    " exceeds current balance " + balance);
+        }
+        balance -= amount;
+        System.out.println("Withdrawal successful. Remaining balance: " + balance);
+    }
+
+    public static void main(String[] args) {
+        BankAccount acc = new BankAccount(100);
+
+        acc.withdraw(50);   // OK
+        acc.withdraw(200);  // Will throw TooLowBalanceException (unchecked)
+    }
+    /*
+    Why it’s “UNCHECKED”
+    Because TooLowBalanceException extends RuntimeException.
+    You’re NOT forced to use TRY…CATCH or THROWS when calling withdraw — you can, but Java won’t require it.
+    If you CHANGED it to extends EXCEPTION instead, it would become a checked exception, and then the compiler would force
+    you to either catch it or declare throws in the calling method.
+
+    */
+}
+
 /*
+
++---------------+------------------------------------+---------------------------------------------+
+| Aspect        | Checked Exceptions                 | Unchecked Exceptions                        |
++---------------+------------------------------------+---------------------------------------------+
+| When enforced?| Compile time                       | Runtime                                     |
++---------------+------------------------------------+---------------------------------------------+
+| Must handle?  | Yes (catch or declare with throws) | No (optional)                               |
++---------------+------------------------------------+---------------------------------------------+
+| Typical base  | Exception (non-Runtime)            | RuntimeException / Error                    |
++---------------+------------------------------------+---------------------------------------------+
+| Examples      | IOException, SQLException          | NullPointerException, ArithmeticException   |
++---------------+------------------------------------+---------------------------------------------+
+
 
 Runtime vs. compile errors:
 
