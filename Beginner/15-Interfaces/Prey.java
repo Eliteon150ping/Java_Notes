@@ -1,4 +1,4 @@
-package Beginner;
+package Interfaces;
 
 public interface Prey {
 

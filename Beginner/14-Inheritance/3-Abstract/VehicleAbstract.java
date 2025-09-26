@@ -1,4 +1,4 @@
-package Beginner;
+package Inheritance;
 
 //  This class cannot be instantiated anywhere since it's now an abstract class but its children/subclass can use these
 //  methods and override them.

@@ -1,6 +1,6 @@
-package Beginner;
+package Inheritance;
 
-import Beginner.VehicleAbstract;
+import Inheritance.VehicleAbstract;
 
 public class CarAbstract extends VehicleAbstract{
 

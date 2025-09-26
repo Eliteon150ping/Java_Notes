@@ -1,5 +1,5 @@
-package Beginner;
-import Beginner.Prey;
+package Interfaces;
+import Interfaces.Prey;
 
 public class Rabbit implements Prey {
 

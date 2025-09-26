@@ -1,4 +1,4 @@
-package PromotingAndCastingVariables;
+package PromotingAndCasting;
 
 import java.lang.reflect.Type;
 

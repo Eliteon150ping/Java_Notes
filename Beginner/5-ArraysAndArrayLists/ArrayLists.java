@@ -1,4 +1,4 @@
-package ArraysAndArrayLists;
+package ArrayAndArrayLists;
 
 import java.util.ArrayList; // Library used for arrayList to work
 

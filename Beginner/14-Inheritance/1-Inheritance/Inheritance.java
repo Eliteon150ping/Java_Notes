@@ -1,9 +1,7 @@
-package Beginner;
+package Inheritance;
 
-import Beginner.Car;
-import Beginner.Bicycle;
-import Beginner.Boat;
-
+import Inheritance.Car;
+import Inheritance.Bicycle;
 
 public class Inheritance {
 

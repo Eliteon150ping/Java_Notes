@@ -1,6 +1,6 @@
-package Beginner;
+package Inheritance;
 
-import Beginner.CarAbstract;
+import Inheritance.CarAbstract;
 
 public class Abstract {
 

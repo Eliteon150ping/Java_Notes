@@ -1,6 +1,6 @@
-package Beginner;
+package Inheritance;
 
-import Beginner.Vehicle;
+import Inheritance.Vehicle;
 
 // 'Bicycle' class is a subclass of 'vehicle' class. It inherites all its attributes and methods.
 public class Bicycle extends Vehicle{  // Use 'extends' keyword to show that the class is inheriting from another class followed the the parent class

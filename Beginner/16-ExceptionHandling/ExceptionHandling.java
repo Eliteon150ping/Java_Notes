@@ -1,4 +1,4 @@
-package Beginner;
+package ExceptionHandling;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

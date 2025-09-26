@@ -1,4 +1,4 @@
-package numbersAndOperators;
+package NumbersAndOperators;
 
 public class numbersAndOperators {
 

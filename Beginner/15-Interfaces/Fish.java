@@ -1,6 +1,6 @@
-package Beginner;
-import Beginner.Prey;
-import Beginner.Predator;
+package Interfaces;
+import Interfaces.Prey;
+import Interfaces.Predator;
 
                           // The Fish class implements 2 interfaces instead of 1 other class like normal inheritance
 public class Fish implements Prey, Predator {

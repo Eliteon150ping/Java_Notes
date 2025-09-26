@@ -1,4 +1,4 @@
-package helloWorld;
+package HelloWorld;
 
              // Case-sensitive(Use Pascal-Case for naming with more than 1 word for a class and Camel-case for Variables/methods.)
 public class HelloWorld {

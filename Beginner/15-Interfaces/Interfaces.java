@@ -1,8 +1,8 @@
-package Beginner;
+package Interfaces;
 
-import Beginner.Hawk;
-import Beginner.Rabbit;
-import Beginner.Fish;
+import Interfaces.Hawk;
+import Interfaces.Rabbit;
+import Interfaces.Fish;
 
 public class Interfaces {
     public static void main(String[] args) {

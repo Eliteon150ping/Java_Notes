@@ -1,6 +1,6 @@
-package Beginner;
+package Inheritance;
 
-import Beginner.VehiclePolymorphism;
+import Inheritance.VehiclePolymorphism;
 
 public class Boat extends VehiclePolymorphism {
 

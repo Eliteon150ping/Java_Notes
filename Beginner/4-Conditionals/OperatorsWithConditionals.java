@@ -1,4 +1,4 @@
-package Beginner;
+package Conditionals;
 
 public class OperatorsWithConditionals {
     public static void main(String[] args) {

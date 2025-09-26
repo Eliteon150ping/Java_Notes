@@ -1,4 +1,4 @@
-package stringClass;
+package StringAndStringBuilder;
 
 public class stringClass {
 

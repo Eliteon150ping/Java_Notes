@@ -1,4 +1,4 @@
-package Beginner;
+package ArrayAndArrayLists;
 
 public class TwoDimensionalArrays {
 

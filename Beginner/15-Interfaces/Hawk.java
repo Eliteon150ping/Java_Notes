@@ -1,5 +1,5 @@
-package Beginner;
-import Beginner.Predator;
+package Interfaces;
+import Interfaces.Predator;
 
 public class Hawk implements Predator {
 

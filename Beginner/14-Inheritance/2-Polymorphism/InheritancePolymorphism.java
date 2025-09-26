@@ -1,10 +1,10 @@
-package Beginner;
+package Inheritance;
 
 import Beginner.*;
-import Beginner.BicyclePolymorphism;
-import Beginner.Boat;
-import Beginner.CarPolymorphism;
-import Beginner.VehiclePolymorphism;
+import Inheritance.BicyclePolymorphism;
+import Inheritance.Boat;
+import Inheritance.CarPolymorphism;
+import Inheritance.VehiclePolymorphism;
 
 
 public class InheritancePolymorphism {
