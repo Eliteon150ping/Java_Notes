@@ -31,9 +31,9 @@ public class SwitchStatement {
             case 11:
                 System.out.println("30 days in the month.");     // Output for case(s): 4,6,9,11
                 break;
-            default:                                             // If all fails(none of the cases above are meet), the 'default' will execute
-                System.out.println("Invalid month.");
-
+            default:                                             // If all fails(none of the cases above are meet), the
+                System.out.println("Invalid month.");            // 'default' will execute. The default can be placed
+                                                                 // anywhere throught the switch statement
         }
 
         // ===== String Switch Example =====
