@@ -8,18 +8,24 @@
 
             // For Loop(Executes a block of code a specified number of times.)
             // for(Initialization; condition; update){code to execute...}
-            for (int i = 1; i < 10; i++) {                                          // Here 'i' is set to 1 then 'i' is less than finally increase 'i' by 1 until 'i' is no longer less than 10
-                System.out.println("This is iteration number: " + i);           // This block of code will execute over and over until 'i' is no longer less than 10.
+            for (int i = 1; i < 10; i++) {                                          // Here 'i' is set to 1 then 'i' is
+                                                                                    // less than finally increase 'i' by
+                                                                                    // 1 until 'i' is no longer less
+                                                                                    // than 10
+                System.out.println("This is iteration number: " + i);           // This block of code will execute over
+                                                                                // and over until 'i' is no longer less
+                                                                                // than 10.
 
             }
 
-            // while loop(Repeats the code while a condition is true. Useful when the number of iterations is not known in advance.)
+            // while loop(Repeats the code while a condition is true. Useful when the number of iterations is not known
+            // in advance.)
             // while(condition){code to execute... i++;}
             int i = 1;
-            while (i < 10) {                                                    // Putting 'true' as the condition will cause an infinite loop
-                System.out.println("This is while loop");
-                i++;                                                           //NB: Do NOT forget to update with 'i++'/'i--' otherwise you'll go into an infinite loop
-            }
+            while (i < 10) {                                                    // Putting 'true' as the condition will
+                System.out.println("This is while loop");                       // cause an infinite loop
+                i++;                                                      //NB: Do NOT forget to update with 'i++'/'i--'
+            }                                                             //   otherwise you'll go into an infinite loop
 
             // Do while loop(Executes the code block at least once before checking the condition)
             // do{Code to execute...} while (condition);
@@ -27,9 +33,9 @@
             do {
                 System.out.println("Iteration: " + a);
                 a++;
-            } while (a < 1);                                                   // Even though 'a' is NOT less than 1, it still executed the 'do' block once before checking the condition
-
-            // Enhanced for Loop (For-Each Loop)(Best used for arrays)
+            } while (a < 1);                                                   // Even though 'a' is NOT less than 1, it
+                                                                               // still executed the 'do' block once
+            // Enhanced for Loop (For-Each Loop)(Best used for arrays)         // before checking the condition
             // for (type element : arrayOrCollection) {Code to execute}
             int[] numbers = {10, 20, 30, 40, 50};
             for (int num : numbers) {
@@ -58,9 +64,9 @@
 
             // With Continue: Skips the current iteration and moves to the next.
             for (int d = 1; d <= 5; d++) {
-                if (d == 3) {                                                      // Loop prints everything until 2 then skips 3 and continues printing till 5
-                    continue;
-                }
+                if (d == 3) {                                                     // Loop prints everything until 2 then
+                    continue;                                                     // skips 3 and continues printing till
+                }                                                                 // 5
                 System.out.println("Iteration: " + d);
             }
 
@@ -72,7 +78,8 @@
      *  1) The inner loop will do a full run PER outer loop iteration
      *     eg. IF an outer loop has 4 iterations and the inner loop has 3 iterations
      *         the inner loop will do a full run of 3 times when the outer loop is on its 1st iteration
-     *         then when the outer loop is on its 2nd iteration, the inner loop will do another full run of 3 iterations until the outer loop ends its condition on false */
+     *         then when the outer loop is on its 2nd iteration, the inner loop will do another full run of 3 iterations
+     *         until the outer loop ends its condition on false */
 
     // Use nested loops when dealing with patterns, grids/tables, or any multi-level repetitive task!
 

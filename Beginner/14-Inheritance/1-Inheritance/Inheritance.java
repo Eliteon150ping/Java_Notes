@@ -3,7 +3,7 @@ package Inheritance;
 import Inheritance.Car;
 import Inheritance.Bicycle;
 
-public class Inheritance {
+public class  Inheritance {
 
     public static void main(String[] args) {
 
@@ -23,8 +23,11 @@ public class Inheritance {
 
         System.out.println();
 
-        System.out.println(car.doors);   // Print the attributes from the 'car' class  // NB: The 'bicycle()' method from the 'bike' class will NOT work for the 'car' class
-        System.out.println(bike.pedals); // Print the attributes from the 'bike' class  // NB: The 'doors()' method from the 'car' class will NOT work for the 'bike' class
+        System.out.println(car.doors);   // Print the attributes from the 'car' class
+                                         // NB: The 'bicycle()' method from the 'bike' class will NOT work for the 'car'
+                                         // class
+        System.out.println(bike.pedals); // Print the attributes from the 'bike' class  // NB: The 'doors()' method from
+                                         // the 'car' class will NOT work for the 'bike' class
 
 
     }

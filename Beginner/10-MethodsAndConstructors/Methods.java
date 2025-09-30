@@ -44,22 +44,23 @@ public class Methods {
         return (x > y);
     }
 
-    // NB: Return methods DO NOT have the void keyword and requires the data type returned eg: integer, string, boolean etc.
+    // NB: Return methods DO NOT have the void keyword and requires the data type returned eg: integer, string, boolean
+    // etc.
 
 
     // Method Overloading
-    public static int sum2(int num1, int num2) {                     // Name of the method is the same for all 3.
+    public static int sum2(int num1, int num2) { // Name of the method is the same for all 3.
 
-        System.out.println("Method One");                            // This returns int values
+        System.out.println("Method One");                  // This returns int values
         return num1 + num2;
     }
 
-    public static float sum2(float num1, float num2) {               // This returns float values
+    public static float sum2(float num1, float num2) {    // This returns float values
         System.out.println("Method Two");
         return num1 + num2;
     }
 
-    public static float sum2(int num1, float num2) {                 // This returns int and float values
+    public static float sum2(int num1, float num2) {     // This returns int and float values
         System.out.println("Method Three");
         return num1 + num2;
     }
@@ -85,7 +86,8 @@ It means the method/variable:
 1) Public Methods or Classes:
 
 • Accessible from anywhere if the class or file is imported.
-  Example: If a method is public, any other object in any class can call it (provided access via instance or static context).
+  Example: If a method is public, any other object in any class can call it (provided access via instance or static
+  context).
 
 2) Non-Public Methods or Classes:
 
@@ -111,7 +113,8 @@ In simple terms:
 
 • The "static" keyword controls HOW the method is accessed (via class vs. object).
 • The "public" keyword controls WHO can access it (from any class or package).
-• IF a "static" method is NOT PUBLIC, it cannot be accessed from classes in other files, regardless of whether it’s static.
+• IF a "static" method is NOT PUBLIC, it cannot be accessed from classes in other files, regardless of whether it’s
+  static.
 
 ////////////////////////////////////////////////////
 

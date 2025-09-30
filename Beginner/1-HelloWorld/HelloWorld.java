@@ -1,6 +1,7 @@
 package HelloWorld;
 
-             // Case-sensitive(Use Pascal-Case for naming with more than 1 word for a class and Camel-case for Variables/methods.)
+             // Case-sensitive(Use Pascal-Case for naming with more than 1 word for a class and Camel-case for
+             // Variables/methods.)
 public class HelloWorld {
 
     public static void main(String[] args) { // Start of every Java program(AKA the Main method).

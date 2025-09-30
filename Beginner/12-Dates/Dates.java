@@ -1,13 +1,15 @@
 package Dates;
 
 import java.time.LocalDate;                   // Represents a date (year, month, day) without a time-zone.
-import java.time.LocalTime;                   // Represents a time (hour, minute, second, nanosecond) without a date or time-zone.
+import java.time.LocalTime;                   // Represents a time (hour, minute, second, nanosecond) without a date or
+                                              // time-zone.
 import java.time.LocalDateTime;               // Represents both date and time without a time-zone.
 import java.time.format.DateTimeFormatter;    // Used for formatting and parsing dates.
 import java.time.ZonedDateTime;               // Represents a date-time with a time-zone.
 import java.time.Period;                      // Used to represent differences in dates and times.
 import java.time.Duration;                    // Used to represent differences in dates and times.
-import java.time.chrono.*;                    // Converts the default calendar of Gregorian to whichever country you desire
+import java.time.chrono.*;                    // Converts the default calendar of Gregorian to whichever country you
+                                              // desire
 
 public class Dates {
 
@@ -29,9 +31,10 @@ public class Dates {
         LocalDateTime myLocalDateTime = LocalDateTime.now();
         System.out.println("My LocalDateTime: " + myLocalDateTime);
 
-        // Set your way of wanting to display the date and time using the DateTimeFormatter NB: There's table at the end with more options for customising
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"); // Shows in day/month/year and hour/minutes/seconds
-        String formattedDate = myLocalDateTime.format(formatter);
+        // Set your way of wanting to display the date and time using the DateTimeFormatter NB: There's table at the end
+        // with more options for customising
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"); // Shows in day/month/year and
+        String formattedDate = myLocalDateTime.format(formatter);                         // hour/minutes/seconds
 
         System.out.println("Formatted Date: " + formattedDate);
 
@@ -56,7 +59,8 @@ public class Dates {
         JapaneseDate jDate = JapaneseDate.from(JapanDate);
         System.out.println("Japanese date: "+ jDate);
 
-        // Adding,subtracting days using the .plusDays() and .minusDays() methods NB: Can work with months and years, just make sure its with dates
+        // Adding,subtracting days using the .plusDays() and .minusDays() methods NB: Can work with months and years,
+        // just make sure its with dates
         LocalDate nextWeek = myDate.plusDays(7);
         LocalDate lastWeek = myDate.minusDays(7);
         LocalDate nextMonth = myDate.plusMonths(1);

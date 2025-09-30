@@ -9,12 +9,15 @@ public class AccessControl {
     }
 
     // Access Modifiers
-    private String make;                         // These are private to this class only and cannot be accessed without making getter and setter methods
+    private String make;      // These are private to this class only and cannot be accessed without
+                                                 // making getter and setter methods
     private String model;
     private int year;
 
     AccessControl(String make,String model,int year){
-        this.setMake(make);                                 // The setter methods are used here to make updating/recieving arguments alot easier instead of using 'this.make = make;'
+        this.setMake(make);                                 // The setter methods are used here to make updating/
+                                                            // recieving arguments alot easier instead of using
+                                                            // 'this.make = make;'
         this.setModel(model);                               // since the setter method has the 'this.make = make;' in it
         this.setYear(year);
     }
@@ -22,7 +25,9 @@ public class AccessControl {
     // Getters(A getter is a method used to retrieve the value of a private field.)
     // NB: Purpose: To provide controlled read access.
 
-    public String getMake() {                                   // Typical Naming: The method name usually starts with 'get' followed by the field name in camel case (e.g., getName).
+    public String getMake() {        // Typical Naming: The method name usually starts with
+                                                                // 'get' followed by the field name in camel case
+                                                                // (e.g., getName).
         return this.make;
     }
 
@@ -37,7 +42,10 @@ public class AccessControl {
     // Setters(A setter is a method used to set or modify the value of a private field.)
     // NB: Purpose: To provide controlled write access, often including validation or additional processing.
 
-    public void setMake(String make) {                         // Typical Naming: The method name usually starts with 'set' followed by the field name in camel case (e.g., setName).
+    public void setMake(String make) {
+                                                               // Typical Naming: The method name usually starts with
+                                                               // 'set' followed by the field name in camel case
+                                                               // (e.g., setName).
         this.make = make;
     }
 
@@ -98,7 +106,7 @@ Why Use Them?
 | Parameters     | None.                            | Typically accepts one parameter.|
 | Use Case       | When you need to view data.      | When you need to update data.   |
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Access level modifiers determine whether other classes can
 use a particular field or invoke a particular method

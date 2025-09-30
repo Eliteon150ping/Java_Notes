@@ -11,8 +11,10 @@ public class InheritancePolymorphism {
 
     public static void main(String[] args) {
 
-        // Polymorphism = 	The ability of an object to identify as more than one type/more than itself (greek word for poly-"many", morph-"form")
-        //                  Eg. Think a dog. It identifies as a dog(itself), also as a animal and as an organism thus taking 3 forms.
+        // Polymorphism = 	The ability of an object to identify as more than one type/more than itself (greek word for
+        //                  poly-"many", morph-"form")
+        //                  Eg. Think a dog. It identifies as a dog(itself), also as a animal and as an organism thus
+        //                  taking 3 forms.
 
 
         CarPolymorphism car = new CarPolymorphism(); // Create a car object
@@ -35,8 +37,11 @@ public class InheritancePolymorphism {
         System.out.println(car instanceof CarPolymorphism);           // True
         System.out.println(bicycle instanceof BicyclePolymorphism);   // True
         System.out.println(boat instanceof VehiclePolymorphism);      // True
-        System.out.println(Vehicle instanceof BicyclePolymorphism);   // False(This happens because the 'Vehicle' object of the Superclass 'VehiclePolymorphism' is NOT an instance
-                                                                      // of any of the subclasses hence false is returned)
+        System.out.println(Vehicle instanceof BicyclePolymorphism);   // False(This happens because the 'Vehicle' object
+                                                                      // of the Superclass 'VehiclePolymorphism' is NOT
+                                                                      // an instance
+                                                                      // of any of the subclasses hence false is
+                                                                      // returned)
 
         // Upcasting and downcasting
 
@@ -65,6 +70,7 @@ public class InheritancePolymorphism {
 
 /*
 
-NB: This can also work through interfaces(More on that later), just create "VehiclePolymorphism" file an interface file and declare an basic method
+NB: This can also work through interfaces(More on that later), just create "VehiclePolymorphism" file an interface file
+    and declare an basic method
 
 */

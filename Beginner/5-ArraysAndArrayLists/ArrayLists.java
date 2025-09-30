@@ -6,8 +6,8 @@ public class ArrayLists {
 
     public static void main(String[] args) {
 
-        // Create an ArrayList to hold numbers                               // Data types: Integers, Strings, Boolean etc.
-        // ArrayList<type> arrayListName = new ArrayList<>()
+        // Create an ArrayList to hold numbers                               // Data types: Integers, Strings, Boolean
+        // ArrayList<type> arrayListName = new ArrayList<>()                 // etc.
         ArrayList<Integer> numbers = new ArrayList<>();
 
         // Adding numbers to the list                                        // 'add()' to add values to the arrayList
@@ -21,24 +21,25 @@ public class ArrayLists {
             System.out.println(number);
         }
 
-        // Accessing a specific number by index                            // 'get()' to display a value by its index position
-        System.out.println("number at index 1: " +numbers.get(1));
+        // Accessing a specific number by index                            // 'get()' to display a value by its index
+        System.out.println("number at index 1: " +numbers.get(1));         // position
 
-        // Updating a number                                               // 'set()' to update a value at that index position.
-                                                                           // example. '.set(1,3)' At index position '1', replace the current value with '3'.
-       numbers.set(1, 4);
+        // Updating a number                                               // 'set()' to update a value at that index
+                                                                           // position.
+                                                                           // example. '.set(1,3)' At index position '1'
+       numbers.set(1, 4);                                                  // , replace the current value with '3'.
        System.out.println("Updated number at index 1: " +numbers.get(1));
 
         // Removing a number
-       numbers.remove(0);                                            // '.remove()' to delete a number at that index position
-        System.out.println("number after removal:");
+       numbers.remove(0);                                            // '.remove()' to delete a number at that
+        System.out.println("number after removal:");                       // index position
         for (int number :numbers) {
             System.out.println(number);
         }
 
-        // Checking the size of the ArrayList                              // '.size()' will display the length of the arrayList(How many numbers are in the arrayList in total)
-        System.out.println("Total numbers: " +numbers.size());
-
+        // Checking the size of the ArrayList                              // '.size()' will display the length of the
+        System.out.println("Total numbers: " +numbers.size());             // arrayList(How many numbers are in the
+                                                                           // arrayList in total)
         // ---------- ArrayList contains() and indexOf() ----------
         ArrayList<String> fruits = new ArrayList<>();
         fruits.add("Apple");

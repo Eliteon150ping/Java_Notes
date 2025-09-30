@@ -3,12 +3,18 @@ package Inheritance;
 import Inheritance.Vehicle;
 
 // 'Car' class is a subclass of 'vehicle' class. It inherites all its attributes and methods.
-public class Car extends Vehicle{    // Use 'extends' keyword to show that the class is inheriting from another class followed the the parent class
+public class Car extends Vehicle{
+                                     // Use 'extends' keyword to show that the class is inheriting from another class
+                                     // followed the the parent class
 
-    int wheels = 4;                  // Here you can make unique attributes and methods just for this class while using the universal attributes and methods from the parent class
+    int wheels = 4;
+                                     // Here you can make unique attributes and methods just for this class while using
+                                     // the universal attributes and methods from the parent class
                                      // like 'go' and 'stop'.
 
-    int doors = 4;                    // Since a car has 4 wheels and doors(can vary per body type), these will remain unique to just the 'car' class since bicycles don't have 4
+    int doors = 4;
+                                      // Since a car has 4 wheels and doors(can vary per body type), these will remain
+                                      // unique to just the 'car' class since bicycles don't have 4
                                      // wheels and doors
 
     // Car constructor explicitly calls parent constructor

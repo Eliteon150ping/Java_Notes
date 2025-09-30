@@ -5,7 +5,8 @@ public class Objects {
     // Hardcoded values(Though writing a constructor will make putting values easier, more on that later)
     String name = "Junior Duke";
     int custID = 1205;
-    String address = "11 somewhere street";                                                  // Fields(Properties)(Attributes)
+    String address = "11 somewhere street";                                           // Fields(Properties)
+                                                                                      // (Attributes)
     int orderNum = 69;
     int age = 19;
 
@@ -18,7 +19,11 @@ public class Objects {
         // Create an object of the "Objects" class
         // Enter The class name(Right at the top) followed by a variable name then "= new className"
 
-        Objects object1 = new Objects();                                               // NB: these can be exported to different files in the directory by typing this same syntax(check the "Class" file to see how its imported).
+        Objects object1 = new Objects();                                               // NB: these can be exported to
+                                                                                       // different files in the
+                                                                                       //directory by typing this same
+                                                                                       // syntax(check the "Class" file
+                                                                                       //to see how its imported).
         // <class name> variable = new <class name>() --> syntax
 
         // Use the "." Operator to access fields and methods of an object.

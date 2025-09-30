@@ -4,7 +4,8 @@ public class ParsingArgs {
 
     public static void main(String[] args) {
 
-        // When you complie and run the app in cmd or a similar terminal, you can pass arguements into it through cmd etc. simply because of the "args" keyword from the main method
+        // When you complie and run the app in cmd or a similar terminal, you can pass arguements into it through cmd
+        // etc. simply because of the "args" keyword from the main method
         System.out.println("args[0] is "+ args[0]);
         System.out.println("args[1] is "+ args[1]);
 
