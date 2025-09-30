@@ -7,27 +7,36 @@ public class Variables {
 
         // Basic variables
         String myString = "This is a string";  // Contains a series of characters
-        int myInt = 3;                         // Holds a value from -2^31 to 2^31-1.(32 bits)
-                                               // (–2,147,483,648 to 2,147,483,647, or 4,294,967,296 possible values)
+
+        int myInt = 3;                         /* Holds a value from -2^31 to 2^31-1.(32 bits)
+                                                  (–2,147,483,648 to 2,147,483,647, or 4,294,967,296 possible values) */
+
         boolean myBoolean = true;              // Either True or False
 
         // Advanced variables
         double myDouble = 3.14;                // Holds a decimal number
-        char myChar = 'A';                     // Contains a single character with (''). NB: The ascii table displays each
-                                               // char character's value.(a-z:97-122, A-Z:65-90)
-        float myFloat = 3.14f;                 // Contains a decimal number with 'f' at the end.(32 bits)
-                                               // (1.40239846e-45f to 3.40282347e+38f)
-        byte myByte = 127;                     // Holds a value from -2^7 to 2^7-1.(8 bits)
-                                               // (–128 to 127, or 256 possible values)
-        short myShort = 1234;                  // Holds a value from -2^15 to 2^15-1.(16 bits)
-                                               // (–32,768 to 32,767, or 65,535 possible values)
-        long myLong = 1234567890L;             // Holds a value from -2^63 to 2^63-1.(64 bits)
-                                               // (–9,223,372,036,854,775,808 to 9,223,372,036854,775,807 or
-                                               //18,446,744,073,709,551,616 possible values)
+
+        char myChar = 'A';                     /* Contains a single character with (''). NB: The ascii table displays each
+                                                  char character's value.(a-z:97-122, A-Z:65-90)                      */
+
+        float myFloat = 3.14f;                 /* Contains a decimal number with 'f' at the end.(32 bits)
+                                                  (1.40239846e-45f to 3.40282347e+38f)                                */
+
+        byte myByte = 127;                     /* Holds a value from -2^7 to 2^7-1.(8 bits)
+                                                  (–128 to 127, or 256 possible values)                               */
+
+        short myShort = 1234;                  /* Holds a value from -2^15 to 2^15-1.(16 bits)
+                                                  (–32,768 to 32,767, or 65,535 possible values)                      */
+
+        long myLong = 1234567890L;             /* Holds a value from -2^63 to 2^63-1.(64 bits)
+                                                  (–9,223,372,036,854,775,808 to 9,223,372,036854,775,807 or
+                                                  18,446,744,073,709,551,616 possible values)                         */
+
         final double pie = 3.14;               // Constant(The value can never be changed at all).
 
-        // Uninitialized variables(Won't print in here since local variables have to be initialized)(Instance variables
-        // (non-static fields) will have the default value)
+        /* Uninitialized variables(Won't print in here since local variables have to be initialized)(Instance variables
+           (non-static fields) will have the default value)                                                           */
+
         String uninitializedString;            // Defaults to 'null'
         int uninitializedInt;                  // Defaults to '0'
         boolean uninitializedBoolean;          // Defaults to 'false'
@@ -39,17 +48,17 @@ public class Variables {
         long uninitializedLong;                // Defaults to '0'
 
         // Primitive Literals
-        int binary = 0b1010;   // binary 10
-        int hex = 0x1F;        // hexadecimal 31
-        int octal = 017;       // octal 15
-        double sci = 1.23e2;   // scientific notation 123.0
+        int binary = 0b1010;                   // binary 10
+        int hex = 0x1F;                        // hexadecimal 31
+        int octal = 017;                       // octal 15
+        double sci = 1.23e2;                   // scientific notation 123.0
 
         // Underscores in numeric literals
-        int million = 1_000_000; // easier to read
+        int million = 1_000_000;               // easier to read
 
 
-        System.out.println("The variable is: " + myString); // Replace "myString" with other variable names to see the
-                                                            // output.
+        System.out.println("The variable is: " + myString); /* Replace "myString" with other variable names to see the
+                                                               output.                                                */
 
     }
 
