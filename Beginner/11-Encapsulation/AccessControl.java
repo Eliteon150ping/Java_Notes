@@ -60,16 +60,15 @@ public class AccessControl {
         this.year = year;
     }
 
-//    // • private: Accessible only within the class
-//    private double price = 15.50;
-//
-//
-//    // • public: Accessible by anyone
-//    public void setPrice(Customer cust){
-//        if (cust.hasLoyaltyDiscount()){
-//            price = price*.85;
-//        }
-//    }
+/*    // • private: Accessible only within the class
+      private double price = 15.50;
+
+      // • public: Accessible by anyone
+      public void setPrice(Customer cust){
+          if (cust.hasLoyaltyDiscount()){
+              price = price*.85;
+          }
+      }                                                                                                               */
 
 
 
@@ -93,7 +92,6 @@ public void setPrice(Customer cust){
 // set price discount relative to customer
 
 }
-
 
 Why Use Them?
 1. Encapsulation: Protects the internal state of the object.

@@ -36,9 +36,9 @@ public class stringClass {
         //More Comparison
         String a = "Test";
         String b = "Test";
-        System.out.println(a == b); // compares references
-        System.out.println(a.equals(b)); // compares values
-        System.out.println(a.equalsIgnoreCase("test")); // ignores case
+        System.out.println(a == b);                                             // compares references
+        System.out.println(a.equals(b));                                        // compares values
+        System.out.println(a.equalsIgnoreCase("test"));             // ignores case
 
         // String Method Calls with Object Return Values Method calls returning objects:
 
@@ -67,24 +67,24 @@ public class stringClass {
 
         // Substring
         String combined = "Hello" + "World";
-        String sub = combined.substring(0, 5); // "Hello"
+        String sub = combined.substring(0, 5);                                       // "Hello"
         System.out.println(sub);
 
         // Character access
-        char letter = combined.charAt(1); // 'e'
+        char letter = combined.charAt(1);                                            // 'e'
         System.out.println(letter);
 
         // Replace
         String replaced = combined.replace("World", "Java");
-        System.out.println(replaced); // "World" gets replaced by "Java"
+        System.out.println(replaced);                                                // "World" gets replaced by "Java"
 
         // Escape sequences
         String escaped = "She said \"Hello\"\nNew line\tTabbed";
         System.out.println(escaped);
 
         // Mixing Strings and Other Types
-        String mix = "Number: " + 5; // "Number: 5"
-        String calc = "Sum: " + (2 + 3); // "Sum: 5"
+        String mix = "Number: " + 5;                                                // "Number: 5"
+        String calc = "Sum: " + (2 + 3);                                            // "Sum: 5"
         System.out.println(mix + " " + calc);
 
     }
