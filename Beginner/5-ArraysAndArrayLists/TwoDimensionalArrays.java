@@ -4,12 +4,16 @@ public class TwoDimensionalArrays {
 
     public static void main(String[] args) {
 
-        // A two-dimensional array (an array of arrays) is similar to a spreadsheet with multiple columns (each column represents one array or list of items) and multiple rows
+        /* A two-dimensional array (an array of arrays) is similar to a spreadsheet with multiple columns (each column
+           represents one array or list of items) and multiple rows                                                   */
+
         // Idealy used for tables
         // Syntax: type [][] arrayName
-        int [][] yearlySales;          // Declare a 2d array NB: This can be as many dimensions as you want, the more '[]' you add the bigger the dimension of the array will be.
+        int [][] yearlySales;          /*  Declare a 2d array NB: This can be as many dimensions as you want, the more
+                                           '[]' you add the bigger the dimension of the array will be.                */
 
-        yearlySales = new int[5][4];   // This creates 5 rows and 4 columns(number of arrays(5), length(4)) ----> 5 arrays of 4 elements each
+        yearlySales = new int[5][4];   /* This creates 5 rows and 4 columns(number of arrays(5), length(4)) ----> 5
+                                          arrays of 4 elements each                                                   */
 
         yearlySales[0][0] = 1000;      // At quarter 1 of year 1 there's a 1000 sales
         yearlySales[0][1] = 1500;      // At quarter 2 of year 1 there's a 1500 sales

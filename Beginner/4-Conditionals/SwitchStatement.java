@@ -7,12 +7,14 @@ public class SwitchStatement {
         int month = 2;
         boolean isLeapYear = true;
 
-        // A Switch Statement is a simplier more performance way of doing an if else statement if there's way too much
-        // conditions to be checked like a highway with multiple exits
-        // These can be done with other data types like strings etc. for cases but different data types cannot be mixed
-        // in switch statements
+        /* A Switch Statement is a simplier more performance way of doing an if else statement if there's way too much
+           conditions to be checked like a highway with multiple exits                                                */
+
+        /* These can be done with other data types like strings etc. for cases but different data types cannot be mixed
+           in switch statements                                                                                       */
+
         switch (month) {
-            case 1: // Since the month is 1, the output will be printed        // the 'case' keyword evaluates
+            case 1: // Since the month is 1, the output will be printed        // The 'case' keyword evaluates
             case 3:                                                            // the variable or expression then gives
             case 5:                                                            // an ouput
             case 7:

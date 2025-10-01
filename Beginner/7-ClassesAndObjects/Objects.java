@@ -19,12 +19,11 @@ public class Objects {
         // Create an object of the "Objects" class
         // Enter The class name(Right at the top) followed by a variable name then "= new className"
 
-        Objects object1 = new Objects();                                               // NB: these can be exported to
-                                                                                       // different files in the
-                                                                                       //directory by typing this same
-                                                                                       // syntax(check the "Class" file
-                                                                                       //to see how its imported).
-        // <class name> variable = new <class name>() --> syntax
+        // <class name> variable = new <class name>(); --> syntax
+        Objects object1 = new Objects();                                   /* NB: these can be exported to different
+                                                                              files in the directory by typing this same
+                                                                              syntax(check the "Class" file  to see how
+                                                                              its imported).                          */
 
         // Use the "." Operator to access fields and methods of an object.
         System.out.println(object1.name); // Can print out the name like this or...
