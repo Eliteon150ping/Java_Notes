@@ -1,7 +1,7 @@
 package Inheritance;
 
-//  This class cannot be instantiated anywhere since it's now an abstract class but its children/subclass can use these
-//  methods and override them.
+/*  This class cannot be instantiated anywhere since it's now an abstract class but its children/subclass can use these
+    methods and override them.                                                                                        */
 public abstract class VehicleAbstract {
 
     String brand;

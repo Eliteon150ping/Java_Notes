@@ -8,12 +8,14 @@ public class CarAbstract extends VehicleAbstract{
 
     // Constructor in subclass calling super()
     public CarAbstract(String brand, int doors){
-        super(brand); // Calls the VehicleAbstract constructor
+        super(brand);                                                    // Calls the VehicleAbstract constructor
         this.doors = doors;
     }
 
-    @Override    // The 'go()' method is inherited here and overrided to do something here
-    void go() {
+    @Override
+    void go() {                                                          /* The 'go()' method is inherited here and
+                                                                            overrided to do something here.           */
+
         System.out.println("You're driving the car with " + doors + " doors. ");
 
     }

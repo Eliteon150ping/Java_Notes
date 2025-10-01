@@ -7,11 +7,11 @@ public enum Day {
 
         private final int dayNumber;
 
-        Day(int dayNumber) {              // Constructor(must be private)
+        Day(int dayNumber) {                              // Constructor(must be private)
             this.dayNumber = dayNumber;
         }
 
-        public int getDayNumber(){       // Method to give day number
+        public int getDayNumber(){                        // Method to give day number
             return this.dayNumber;
         }
 

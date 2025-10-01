@@ -14,8 +14,8 @@ package myPackage;
 📦 Using import to Access Other Packages
 
 -To use a class from another package:
-import myPackage.MyClass;          // imports one class
-import myPackage.*;                // imports all classes in the package
+import myPackage.MyClass;                                         // imports one class
+import myPackage.*;                                               // imports all classes in the package
 
 -After importing, you can create objects:
 MyClass obj = new MyClass();
