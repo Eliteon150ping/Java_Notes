@@ -9,13 +9,13 @@ public class Methods {
 
 
         // Method overloading
-        int totalOne = Methods.sum2(2, 3);                       // For int
+        int totalOne = Methods.sum2(2, 3);                                            // For int
         System.out.println("The total is " + totalOne);
 
-        float totalTwo = Methods.sum2(15.99F, 12.85F);           // For float
+        float totalTwo = Methods.sum2(15.99F, 12.85F);                                // For float
         System.out.println(totalTwo);
 
-        float totalThree = Methods.sum2(2, 12.85F);              // For int and float
+        float totalThree = Methods.sum2(2, 12.85F);                                   // For int and float
         System.out.println(totalThree);
 
 
@@ -24,7 +24,8 @@ public class Methods {
     ////////////////////////////////////////////////////////////////////////////////////////////
 
     // This is a "void" method(does not return any value)
-    public static void hello() {               // There are no parameters in "()".
+    // There are no parameters in "()".
+    public static void hello() {
         System.out.println("Hello");
 
     }
@@ -44,25 +45,26 @@ public class Methods {
         return (x > y);
     }
 
-    // NB: Return methods DO NOT have the void keyword and requires the data type returned eg: integer, string, boolean
-    // etc.
+    /* NB: Return methods DO NOT have the void keyword and requires the data type returned eg:
+           integer, string, boolean etc.                                                                              */
 
 
     // Method Overloading
-    public static int sum2(int num1, int num2) { // Name of the method is the same for all 3.
+    // Name of the method is the same for all 3.
+    public static int sum2(int num1, int num2) {
 
-        System.out.println("Method One");                  // This returns int values
+        System.out.println("Method One");                                  // This returns int values
         return num1 + num2;
     }
 
-    public static float sum2(float num1, float num2) {    // This returns float values
+    public static float sum2(float num1, float num2) {
         System.out.println("Method Two");
-        return num1 + num2;
+        return num1 + num2;                                               // This returns float values
     }
 
-    public static float sum2(int num1, float num2) {     // This returns int and float values
+    public static float sum2(int num1, float num2) {
         System.out.println("Method Three");
-        return num1 + num2;
+        return num1 + num2;                                               // This returns int and float values
     }
 
 }
@@ -135,10 +137,10 @@ method overloading:
 The method signature is the name of the method + the parameter types in order.
 It does not include the return type or access modifier.
 
-public static void sayHello("")      // Signature: sayHello()
-public static int getNumber()      // Signature: getNumber()
-public static int sum(int, int)    // Signature: sum(int, int)
-public static float sum(float, float) // Signature: sum(float, float)
+public static void sayHello("")              // Signature: sayHello()
+public static int getNumber()                // Signature: getNumber()
+public static int sum(int, int)              // Signature: sum(int, int)
+public static float sum(float, float)        // Signature: sum(float, float)
 
 
 */

@@ -11,7 +11,7 @@ public class ParsingArgs {
 
         // Converting from a string to an integer
         System.out.println("The total is " + args[2] + args[3] + " as a string concat.");
-        int arg2 = Integer.parseInt(args[2]); // Integer.parseInt() will convert a value from a string to an integer
+        int arg2 = Integer.parseInt(args[2]);    // Integer.parseInt() will convert a value from a string to an integer
         int arg3 = Integer.parseInt(args[3]);
 
         System.out.println("Total is: " + (arg2+arg3) + " after the arguements have been converted to integers.");

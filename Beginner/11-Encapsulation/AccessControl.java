@@ -9,12 +9,15 @@ public class AccessControl {
     }
 
     // Access Modifiers
-    private String make;      // These are private to this class only and cannot be accessed without
-                                                 // making getter and setter methods
+
+    /* These are private to this class only and cannot be accessed without
+       making getter and setter methods                                                                               */
+    private String make;
     private String model;
     private int year;
 
     AccessControl(String make,String model,int year){
+
         this.setMake(make);                                 // The setter methods are used here to make updating/
                                                             // recieving arguments alot easier instead of using
                                                             // 'this.make = make;'
@@ -25,10 +28,10 @@ public class AccessControl {
     // Getters(A getter is a method used to retrieve the value of a private field.)
     // NB: Purpose: To provide controlled read access.
 
-    public String getMake() {        // Typical Naming: The method name usually starts with
-                                                                // 'get' followed by the field name in camel case
-                                                                // (e.g., getName).
-        return this.make;
+    public String getMake() {
+        return this.make;                                    /* Typical Naming: The method name usually starts with
+                                                                'get' followed by the field name in camel case
+                                                                (e.g., getName).                                      */
     }
 
     public String getModel() {
@@ -43,9 +46,9 @@ public class AccessControl {
     // NB: Purpose: To provide controlled write access, often including validation or additional processing.
 
     public void setMake(String make) {
-                                                               // Typical Naming: The method name usually starts with
-                                                               // 'set' followed by the field name in camel case
-                                                               // (e.g., setName).
+                                                               /* Typical Naming: The method name usually starts with
+                                                                  'set' followed by the field name in camel case
+                                                                  (e.g., setName).                                    */
         this.make = make;
     }
 

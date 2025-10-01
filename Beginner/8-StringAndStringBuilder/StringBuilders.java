@@ -6,16 +6,16 @@ public class StringBuilders {
 
         // This is how you create a string using the string builder class
         StringBuilder mySB = new StringBuilder("Hello");
-        mySB.append(" World");                     // The ".append()" method will concat that new word in the string
-        mySB.insert(5, ",");             // "Hello, World"
-        mySB.delete(5, 6);                        // "Hello World"
-        mySB.replace(6, 11,"Java"); // "Hello Java"
-        mySB.reverse();                          // "avaJ olleH"
-        mySB.setCharAt(0, 'h');         // "havaJ olleH"
+        mySB.append(" World");                         // The ".append()" method will concat that new word in the string
+        mySB.insert(5, ",");                 // "Hello, World"
+        mySB.delete(5, 6);                            // "Hello World"
+        mySB.replace(6, 11,"Java");     // "Hello Java"
+        mySB.reverse();                              // "avaJ olleH"
+        mySB.setCharAt(0, 'h');            // "havaJ olleH"
 
         // Length vs Capacity
-        System.out.println(mySB.length());   // number of characters
-        System.out.println(mySB.capacity()); // storage space available
+        System.out.println(mySB.length());          // number of characters
+        System.out.println(mySB.capacity());        // storage space available
 
         // Convert to String
         String finalStr = mySB.toString();

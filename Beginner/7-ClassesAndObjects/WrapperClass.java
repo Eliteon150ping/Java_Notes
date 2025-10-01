@@ -10,8 +10,8 @@ public class WrapperClass {
 
 
         // How to create a wrapper class(old way)
-        // Integer a = new Integer(123);               NB: This is the old but the best way to visualise it since
-        // Double b = new Double(3.14);                    it looks like the standard way to define a object.
+        // Integer a = new Integer(123);                      NB: This is the old but the best way to visualise it since
+        // Double b = new Double(3.14);                           it looks like the standard way to define a object.
         // Character c = new Charcter('$');
         // Boolean d = new Boolean(true);
 

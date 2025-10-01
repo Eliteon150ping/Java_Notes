@@ -21,15 +21,21 @@ public class Constructors {
         System.out.println("Constructors created");
     }
 
-    // 3) Parameterized Constructor:            // These will have declared but not initialized variables.
+    // 3) Parameterized Constructor:
+    // These will have declared but not initialized variables.
     String Param;
     int ParamNum;
 
-    public Constructors(String Param, int ParamNum) {  // The params will act as tempo variables that will take any
-                                                       // value(In this case a string and integer)
-        this.Param = Param        /* The left side with "this.Param" is using the declared variable in line 25 while
-                                     the right side "Param" is using the arg value passed into the parameter          */                                                                                                                                                                                                      ;
-        this.ParamNum = ParamNum; // "This" keyword is a reference to the current object.
+    public Constructors(String Param, int ParamNum) {
+                                                            /* The params will act as tempo variables that will take any
+                                                               value(In this case a string and integer)               */
+
+
+        this.Param = Param;                                 /* The left side with "this.Param" is using the declared
+                                                               variable in line 25 while  the right side "Param" is
+                                                               using the arg value passed into the parameter          */
+
+        this.ParamNum = ParamNum;                           // "This" keyword is a reference to the current object.
 
     }
 
@@ -97,7 +103,7 @@ class StaticVsInstance {
     // Constructor
     public StaticVsInstance(String name) {
         this.name = name;
-        objectCount++; // increments shared static variable
+        objectCount++;                                                    // increments shared static variable
     }
 
     public void display() {
