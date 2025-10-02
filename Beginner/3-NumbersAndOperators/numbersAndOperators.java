@@ -22,7 +22,7 @@ public class numbersAndOperators {
         // Increment and Decrement Operators (++ and --) Adds or subtracts 1
 
         /* Post in/decrement(Will only add/subtract after the execution. Needs to be printed a second time for the new
-           value to show)                                                                                             */
+           value to show).                                                                                            */
         int num = 1;
         System.out.println("The post increment of 1 is "+ num++);
         System.out.println("The post increment being printed a second time is " + num);

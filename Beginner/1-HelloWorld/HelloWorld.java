@@ -21,6 +21,10 @@ To run in cmd:
 What is Java?
 Java is a general-purpose, object-oriented programming language designed to be platform-independent.
 
+What is Object Oriented Programming?
+Object-Oriented Programming (OOP) in Java is a programming paradigm centered around the concept of "objects," which are
+instances of "classes." It organizes software design around data, or objects, rather than functions and logic.
+
 1) What is Compiling?
 Compiling Java code is essential because the machine(Your PC) cannot understand a human-readable language like Java.
 By translating human-readable code into machine-readable language, the Java compiler ensures that the code runs and
@@ -31,7 +35,12 @@ While compiling, the JVM(Java Virtual Machine) is basicaly a virtual computer ru
 code(bytecode) on any operating system eg. Windows or MacOS. It acts as a universal software computer to run bytecode
 for any OS.
 
-3) What is Bytecode?
+3) What is JRE?
+The Java Runtime Environment (JRE) is a software package that provides the necessary components to run Java applications.
+It is the runtime portion of Java software and is distinct from the Java Development Kit (JDK), which includes tools for
+developing Java applications.
+
+4) What is Bytecode?
 Bytecode is the result of the human written code being coverted to machine code and is stored in the form of a ".class"
 file which can then can be transfered to a different OS to be ran by that OS with zero issues. It is platform independent
 meaning it will run on ANY Operating System.
