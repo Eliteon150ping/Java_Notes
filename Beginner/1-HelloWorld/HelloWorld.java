@@ -30,20 +30,22 @@ Compiling Java code is essential because the machine(Your PC) cannot understand 
 By translating human-readable code into machine-readable language, the Java compiler ensures that the code runs and
 produces the expected output(Compiler creates bytecode from human code).
 
-2) What is JVM?
+2) What is Bytecode?
+Bytecode is the result of the human written code being coverted to machine code and is stored in the form of a ".class"
+file which can then can be transfered to a different OS to be ran by that OS with zero issues. It is platform independent
+meaning it will run on ANY Operating System.
+
+3) What is JVM?
 While compiling, the JVM(Java Virtual Machine) is basicaly a virtual computer runtime engine that runs compiled machine
 code(bytecode) on any operating system eg. Windows or MacOS. It acts as a universal software computer to run bytecode
 for any OS.
 
-3) What is JRE?
+4) What is JRE?
 The Java Runtime Environment (JRE) is a software package that provides the necessary components to run Java applications.
 It is the runtime portion of Java software and is distinct from the Java Development Kit (JDK), which includes tools for
 developing Java applications.
 
-4) What is Bytecode?
-Bytecode is the result of the human written code being coverted to machine code and is stored in the form of a ".class"
-file which can then can be transfered to a different OS to be ran by that OS with zero issues. It is platform independent
-meaning it will run on ANY Operating System.
+
 
 
 */
