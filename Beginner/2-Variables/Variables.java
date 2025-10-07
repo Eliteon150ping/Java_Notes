@@ -63,4 +63,65 @@ public class Variables {
     }
 
 }
+/*
 
+1) Local Variables:
+
+✅Declaration:
+• Declared within a method, constructor, or a block of code.
+
+✅Scope:
+• Accessible only within the method, constructor, or block where they are declared.
+• They are not visible or usable outside of that specific scope.
+
+✅Lifetime:
+• Created when the method, constructor, or block is entered and destroyed when the execution of that block finishes.
+• They exist only during the execution of their containing scope.
+
+✅Initialization:
+• Must be explicitly initialized before use. The compiler will issue an error if an uninitialized local variable is
+  accessed.
+
+✅Memory:
+• Stored on the stack.
+
+2) Instance Variables:
+
+✅Declaration:
+• Declared inside a class but outside any method, constructor, or block.
+
+✅Scope:
+• Accessible by all methods within the class. Their accessibility to code outside the class depends on their access
+  modifiers (e.g., public, private, protected).
+
+✅Lifetime:
+• Created when an object (instance) of the class is created and destroyed when the object is garbage collected.Each object
+  has its own copy of instance variables.
+
+✅Initialization:
+• Automatically initialized to default values if not explicitly assigned (e.g., 0 for numeric types, false for boolean,
+  null for reference types).
+
+✅Memory:
+• Stored on the heap as part of the object.
+
+3) Static Variables (Class Variables):
+
+✅Declaration:
+• Declared inside a class but outside any method, constructor, or block, using the static keyword.
+
+✅Scope:
+• Accessible by all instances of the class and can be accessed directly using the class name.
+
+✅Lifetime:
+• Created when the class is loaded into memory and destroyed when the program terminates. There is only one copy of a
+  static variable, shared across all instances of the class.
+
+✅Memory Allocation:
+• Stored in the method area (part of the heap memory).
+
+✅Initialization:
+• If not explicitly initialized, they receive default values based on their data type.
+
+
+*/
