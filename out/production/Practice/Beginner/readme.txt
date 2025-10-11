@@ -1,1 +1,1 @@
-View at 18pt font for the best experience. 
+View at 18pt font size for the best experience.

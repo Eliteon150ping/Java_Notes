@@ -1,5 +1,7 @@
 package ArrayAndArrayLists;
 
+import java.util.Arrays;
+
 public class TwoDimensionalArrays {
 
     public static void main(String[] args) {
