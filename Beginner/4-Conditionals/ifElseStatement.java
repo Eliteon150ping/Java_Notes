@@ -47,7 +47,7 @@ public class ifElseStatement {
 
         // An alternative to an if else statement is a ternary operator
         int age2 = 18;
-        String result = (age2 >= 18) ? "Adult" : "Child";      //Must declare data return type example. Boolean, int,
+        String result = (age2 >= 18) ? "Adult" : "Child";      // Must declare data return type example. Boolean, int,
         System.out.println(result);                            // String etc. The "?" tells true and ":" tells false
 
 
