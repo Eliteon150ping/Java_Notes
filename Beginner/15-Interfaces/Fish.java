@@ -11,7 +11,7 @@ public class Fish implements Prey, Predator {
 
     @Override
     public void flee(){
-        System.out.println("The Fish is swimmimg away");
+        System.out.println("The Fish is swimming away");
     }
 
     @Override
