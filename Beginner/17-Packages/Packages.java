@@ -58,5 +58,7 @@ import static java.lang.Math.*; // now you can call sqrt(9) directly
 -Only one public class per file, and the file name must match it.
 -Folder structure must match the package name or compilation fails.
 -If two classes in different packages have the same name, you must use the fully qualified name.
+-A class can be in only one package.
+-Packages can be nested.
 
 */

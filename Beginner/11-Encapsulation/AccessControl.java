@@ -127,7 +127,7 @@ package-private (no explicit modifier).
 | private     | Y       | N       | N       | N     |
 +-------------+---------+---------+---------+-------+
 
-
+NB: Protected members are accessible in subclasses even in different packages
 
 
 
