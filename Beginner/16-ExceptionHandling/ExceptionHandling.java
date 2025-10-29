@@ -118,6 +118,24 @@ class BankAccount {
 
 /*
 
+Runtime vs. Compile errors:
++---------------------+--------------------------------------+--------------------------------------+
+| Error Type          | When It Happens                      | Example                              |
++---------------------+--------------------------------------+--------------------------------------|
+| Compile-time error  | Compile errors happen when the syntax| Missing semicolon, undeclared        |
+|                     | in your code are not defined         | variable, wrong variable name        |
+|                     | correctly , misspelled or incomplete |                                      |
+|                     | (The program willnever fully execute/|                                      |
+|                     | run.)                                |                                      |
++---------------------+--------------------------------------+--------------------------------------|
+| Runtime error       | Runtime errors happen when the       | Divide by zero, invalid array index, |
+| (Exception)         | program is running but an unexpected | invalid user input                   |
+|                     | error or logical issue occurs        |                                      |
++---------------------+--------------------------------------+--------------------------------------+
+
+
+
+Checked vs. Unchecked exceptions:
 +---------------+------------------------------------+---------------------------------------------+
 | Aspect        | Checked Exceptions                 | Unchecked Exceptions                        |
 +---------------+------------------------------------+---------------------------------------------+
@@ -130,89 +148,82 @@ class BankAccount {
 | Examples      | IOException, SQLException          | NullPointerException, ArithmeticException   |
 +---------------+------------------------------------+---------------------------------------------+
 
+Examples of Runtime/Unchecked exception types here:
 
-Runtime vs. compile errors:
-
-1) Compile errors happen when the syntax in your code are not defined correctly, misspelled or incomplete(The program
-   willnever fully execute/run.)
-
-2) Runtime errors happen when the program is running but an unexpected error or logical issue occurs
-
-////////////////////////////////////////
-Examples of Runtime exception types here:
-
-Most common:
-
-1) NullPointerException:
-
-- Attempt to use an object reference that has not been instantiated.
-
-2) ArrayIndexOutOfBoundsException:
-
-- Thrown to indicate that an array has been accessed with an illegal index.
-
-3) ArithmeticException:
-
-- Mainly when a user divides by zero or some form of impossible or undefined mathematical result occurs.
-
-4) NumberFormatException:
-
-- This occurs when an attempt is made to convert a String to a numeric type (e.g., int, double) but the String does not
-  contain a valid numeric format.
-
-5) ClassCastException:
-
-- Thrown when an attempt is made to cast an object to a type to which it is not an instance.
-
-6) IllegalArgumentException:
-
-- Thrown to indicate that a method has been passed an illegal or inappropriate argument.
-
-7) IllegalStateException:
-
-- Thrown to indicate that a method has been invoked at an illegal or inappropriate time, usually because the object's
-  state is not valid for that operation.
-
-8) StackOverflowError:
-
-- This error occurs when the call stack overflows, typically due to excessive method calls, often in the case of
-  uncontrolled recursion.
-
-9) OutOfMemoryError:
-
-- This error indicates that the Java Virtual Machine (JVM) has run out of memory to allocate new objects.
-- This can be caused by memory leaks or by attempting to allocate a very large amount of memory.
-
-10) InputMismatchException:
-
-- When a user types anything but a numeric value or a value that cannot be parsed into a numeric value.
-
-11) Exception:
-
-- A general error message to display for any unexpected error.
-
-Least common:
-
-1) NoSuchElementException:
-
-- Thrown by methods in java.util classes to indicate that the element being requested does not exist.
-
-2) UnsupportedOperationException:
-
-- Thrown to indicate that the requested operation is not supported.
-
-3) SecurityException:
-
-- Thrown by the security manager to indicate a security violation.
-
-4) ConcurrentModificationException:
-
-- Thrown when an object is concurrently modified while iterating over it.
+1) Most common:
++-------------------------------+----------------------------------------+
+| Exception                     | Meaning                                |
++-------------------------------+----------------------------------------+
+| NullPointerException          | Using an object that hasn’t been       |
+|                               | instantiated.                          |
++-------------------------------+----------------------------------------+
+| ArrayIndexOutOfBoundsException| Accessing an invalid index in an array.|
++-------------------------------+----------------------------------------+
+| ArithmeticException           | Illegal math operation (e.g. divide by |
+|                               | zero).                                 |
++-------------------------------+----------------------------------------+
+| NumberFormatException         | Converting a non-numeric string into a |
+|                               | number.                                |
++-------------------------------+----------------------------------------+
+| ClassCastException            | Invalid type casting between objects.  |
++-------------------------------+----------------------------------------+
+| IllegalArgumentException      | Passing an invalid or inappropriate    |
+|                               | argument to a method.                  |
++-------------------------------+----------------------------------------+
+| IllegalStateException         | Method called at the wrong time for    |
+|                               | the object’s state.                    |
++-------------------------------+----------------------------------------+
+| StackOverflowError            | Infinite recursion or too many nested  |
+|                               | method calls.                          |
++-------------------------------+----------------------------------------+
+| OutOfMemoryError              | JVM ran out of memory allocating       |
+|                               | objects.                               |
++-------------------------------+----------------------------------------+
+| InputMismatchException        | Wrong input type (e.g. text when a     |
+|                               | number is expected).                   |
++-------------------------------+----------------------------------------+
+| Exception (generic)           | A general error message to display     |
+|                               | for any unexpected error.                                |
++------------------------------------------------------------------------+
 
 
+2) Least common:
++--------------------------------+----------------------------------------+
+| NoSuchElementException         | Requested element doesn’t exist in a   |
+|                                | collection.                            |
++--------------------------------+----------------------------------------+
+| UnsupportedOperationException  | Operation not supported by collection. |
++--------------------------------+----------------------------------------+
+| SecurityException              | Security manager blocks an action.     |
++--------------------------------+----------------------------------------+
+| ConcurrentModificationException| Modified a collection during iteration.|
++--------------------------------+----------------------------------------+
 
 
-
+Examples of Checked Exceptions types here:
++------------------------------+-------------------------------------------------------------------+
+| Exception Name               | Meaning / When It Happens                                         |
+| -----------------------------+-------------------------------------------------------------------|
+| IOException                  | General I/O error (e.g., reading or writing a file).              |
++------------------------------+-------------------------------------------------------------------+
+| FileNotFoundException        | Trying to open a file that doesn’t exist. (Subclass of IOException)|
++------------------------------+-------------------------------------------------------------------+
+| SQLException                 | Database access error (invalid query or unreachable database).    |
++------------------------------+-------------------------------------------------------------------+
+| ClassNotFoundException       | JVM can’t find a class by name at runtime (used in reflection).   |
++------------------------------+-------------------------------------------------------------------+
+| InterruptedException         | A thread was interrupted while sleeping or waiting.               |
++------------------------------+-------------------------------------------------------------------+
+| CloneNotSupportedException   | Calling clone() on an object that doesn’t implement Cloneable.    |
++------------------------------+-------------------------------------------------------------------+
+| ParseException               | Error parsing data (invalid date or number format).               |
++------------------------------+-------------------------------------------------------------------+
+| InstantiationException       | Attempt to instantiate an abstract class or interface.            |
++------------------------------+-------------------------------------------------------------------+
+| NoSuchMethodException        | Method with the requested signature doesn’t exist.                |
++------------------------------+-------------------------------------------------------------------+
+| URISyntaxException           | Invalid or badly formatted URI string.                            |
++------------------------------+-------------------------------------------------------------------+
 
 
 
