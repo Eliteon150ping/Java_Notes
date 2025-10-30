@@ -183,7 +183,7 @@ Examples of Runtime/Unchecked exception types here:
 |                               | number is expected).                   |
 +-------------------------------+----------------------------------------+
 | Exception (generic)           | A general error message to display     |
-|                               | for any unexpected error.                                |
+|                               | for any unexpected error.              |
 +------------------------------------------------------------------------+
 
 
