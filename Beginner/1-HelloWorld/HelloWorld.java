@@ -3,7 +3,7 @@ package HelloWorld;
 // Case-sensitive (Use Pascal-Case for naming with more than 1 word for a class and Camel-case for Variables/methods.)
 // Class Names Must always start with a Capital letter
 public class HelloWorld {
-
+    
     public static void main(String[] args) { // Start of every Java program(AKA the Main method).
 
         System.out.println("Hello World");   // Print to the console.
