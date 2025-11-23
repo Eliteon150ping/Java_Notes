@@ -34,8 +34,24 @@ public class ExceptionHandling {
             finally {                                                    // This is optional but it's good for
                                                                          // displaying a message regardless of an error
                 System.out.println("This always executes");              // or not eg. If a calculation was successful
-            }                                                            // or not, a message like, "Operation
-        }                                                                // completed" will show for conclusion.
+                                                                         // or not, a message like, "Operation
+                                                                         // completed" will show for conclusion.
+
+                // Unreachable code:
+                                                                      // A line becomes unreachable if the compiler can
+                                                                      // guarantee that the program will never reach it.
+                try{                                                  // This happens when:
+                    throw new Exception("error");                     // 1)return;
+                }catch (Exception e){                                 // 2)throw new Exception();
+                    System.out.println("catch");                      // 3)return something;
+                    return;                                           // 4)throw someError;
+                }finally{                                             // 5)or an infinite loop (while(true){})
+                    System.out.println("finally");
+                }
+                //System.out.println("end)                            // This will always be highlighted red meaning
+                                                                      // nothing after this will complie for this
+            }                                                         // particular class
+        }
 
 }
 
@@ -114,6 +130,7 @@ class BankAccount {
     force you to either catch it or declare throws in the calling method.
 
     */
+
 }
 
 /*
@@ -225,6 +242,10 @@ Examples of Checked Exceptions types here:
 | URISyntaxException           | Invalid or badly formatted URI string.                            |
 +------------------------------+-------------------------------------------------------------------+
 
+Different types of "throws":
 
+throw actually throws an exception instance.
+throws declares that a method might throw certain checked exceptions.
+throw new is the common syntax for creating a new exception instance and then throwing it.
 
 */

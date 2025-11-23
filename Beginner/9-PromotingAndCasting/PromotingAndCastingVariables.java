@@ -71,14 +71,14 @@ Promotion(Widening):
 
 • Automatic promotions:
 – When you assign a smaller type to a larger type:
-  From byte -> short -> int -> long -> float → double
+  From byte -> short -> char -> int -> long -> float → double
 - char also promotes to int
 
 Type Casting(Narrowing):
 
 • When to cast:
 – If you assign a larger type to a smaller type:
-  From double → float -> long -> int -> short -> byte
+  From double → float -> long -> int -> char -> short -> byte
 - Risk: overflow or precision loss
 
 

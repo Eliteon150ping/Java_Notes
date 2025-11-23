@@ -73,6 +73,12 @@ public class Array {
         int[] copy = Arrays.copyOf(arr1, 5); // Copy arr1, make length 5
         System.out.println("Copied array: " + Arrays.toString(copy));
 
+        // NB: Other ways to create and initialze Arrays. Not so common but can appear in 1Z0-811 exam
+        String[] sA1 = new String[] { "aaa"};
+        String[] sA2 = new String[1] ; sA2[0] = "aaa";
+        String[] sA3 = {new String( "aaa")};
+        String[] sA4 = { "aaa"};
+
     }
 }
 
@@ -84,6 +90,8 @@ public class Array {
 
 *      To see all values otherwise you'll see the arrays memory location instead(something like this:
        [Ljava.lang.String;@65ab7765) or just use an 'Enhanced for loop'.
+
+
 
 
 

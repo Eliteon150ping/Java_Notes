@@ -1,13 +1,15 @@
 package ArrayAndArrayLists;
 
 import java.util.ArrayList; // Library used for arrayList to work
+import java.util.Collections;
+
 
 public class ArrayLists {
 
     public static void main(String[] args) {
 
         // Create an ArrayList to hold numbers                               /* Data types: Integers, Strings, Boolean
-        // ArrayList<type> arrayListName = new ArrayList<>()                    etc.                                  */
+        // ArrayList<type> arrayListName = new ArrayList<>()                    etc. Must be in Wrapper for this     */
         ArrayList<Integer> numbers = new ArrayList<>();
 
         // Adding numbers to the list                                        // 'add()' to add values to the arrayList
@@ -58,18 +60,28 @@ public class ArrayLists {
         // Removing by element
         fruits.remove("Apple");
         System.out.println("After removing Apple: " + fruits);
+
+        // Sorting(Alphabetical order)
+        Collections.sort(fruits);
     }
 }
 
 /* NB: ArrayList is more flexible and feature-rich, making it more useful in scenarios where dynamic resizing is needed,
-       whereas Array is faster and ideal for simple, fixed-size collections.                                          */
+       whereas Array is faster and ideal for simple, fixed-size collections.
 
-// Table showing the differences the between an array and arrayList
-/*
+Java.util. contains:
+
+1) Arraylist
+2) Collection
+3) Random
 
 
+Table showing the differences the between an array and arrayList:
+
+
++-----------------------+---------------------------------------+-------------------------------------------------------------------------------+
 | Feature               | Array                                 | ArrayList                                                                     |
-|-----------------------|---------------------------------------|---------------------------------------------------------                      |
+|-----------------------|---------------------------------------|-------------------------------------------------------------                  |
 | **Size**              | Fixed size; declared at creation      | Dynamic size; grows or shrinks as needed                                      |
 |-----------------------|---------------------------------------|---------------------------------------------------------                      |
 | **Type**              | Can hold both primitives and objects  | Holds only objects (uses wrapper classes for primitives)                      |
@@ -93,7 +105,7 @@ public class ArrayLists {
 | **Methods**           | Limited to basic operations(eg.length)| Provides methods like add(), remove(), set(), contains()                      |
 |-----------------------|---------------------------------------|---------------------------------------------------------                      |
 | **Usage**             | Preferred for fixed-size, simple data | Preferred for flexible-size data collections                                  |
-
++-----------------------+---------------------------------------+-------------------------------------------------------------------------------+
 
 
 

@@ -31,6 +31,8 @@ public class Objects {
         // Use the object's methods
         object1.displayCustomer();        // ...through a method
 
+
+
     }
 }
 
